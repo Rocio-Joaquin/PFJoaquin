@@ -150,8 +150,11 @@ form{
 }
 .formulario img{
     width: 400px;
-    height:400px;
-    
+    height:400px; 
+}
+.img-reservas img{
+    width: 500px;
+    height: 600px;
 }
 input, select{
     padding: 10px;
