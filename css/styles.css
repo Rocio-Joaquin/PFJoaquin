@@ -69,7 +69,6 @@ img.d-block{
     grid-template-columns: repeat(3,400px);
     justify-content: space-around;
 }
-
 button.btn {
     background-color: rgb(189, 82, 11);
     border: none;
@@ -80,8 +79,7 @@ button.btn a{
     text-decoration: none;
     list-style: none;
     color: black;
-}
-  
+}  
 .menu-opciones{
     display: flex;
 }
@@ -113,7 +111,6 @@ button.btn{
 .container img{
     width: 200px;
     height: 200px;
-
 }
 .cards img{
     width: 500px;
@@ -123,7 +120,6 @@ button.btn{
     font-size: 22px;
     color: rgb(189, 82, 11);
 }
-
 .titulo-decorado h2{
     margin-bottom: -22px;
 }
@@ -145,12 +141,17 @@ form{
     padding-bottom: 30px;
     background: black;
     width: 700px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
 }
 .formulario{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+}
+.formulario img{
+    width: 400px;
+    height:400px;
+    
 }
 input, select{
     padding: 10px;
@@ -159,6 +160,9 @@ input, select{
     width:650px;
     margin-top: 20px;
     height: 40px;
+}
+select{
+    height: 50px;
 }
 label{
     color: white;
