@@ -38,9 +38,12 @@ strong{
 }
 .logo{
     font-size: 30px;
-    color: rgb(189, 82, 11);
     text-align: start;
     margin-right: 80px;
+}
+.logo a{
+    color: rgb(189, 82, 11);
+    text-decoration: none;
 }
 
 /*INICIO*/
