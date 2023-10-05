@@ -226,72 +226,19 @@ footer{
 .iconos-footer-ul i{
     color:rgb(189, 82, 11);
 }
-
-/*MOBILE
-@media screen and(min-width:480px){
-    h1 , h2{
-        font-size: 15px;
+/*VISTA MOBILE*/
+@media (min-width:500px) and (max-width:700px){
+    h1{
+        font-size: 20px;
         text-align: center;
-        padding: 10px;
     }
-    p{
-        font-size: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .responsive-ul{
-        flex-direction: column;
-    }
-    .responsive-li{
-        font-size: 15px;
-        padding: 15px;
-    }
-    .d-block{
-        width: 100%;
-        height: 200px;
-    }
-    .footer{
-        display: grid;
-        grid-template-columns: repeat(3,100px);
-        gap:5% ;
-        justify-content: center;
-    }
-    .footer h3{
-        color: white;
-        padding-top: 22px;
-        font-size: 15px;
-        color:rgb(189, 82, 11) ;
-    }
-    .footer p{
-        color: white;
-        font-size: 12px;  
-        margin: -1px;  
-    }
-    .iconos-footer-ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;  
-    }
-    .iconos-footer-ul li{
-        font-size: 12px;
-        margin: 4px;
-    }
-    .iconos-footer-ul i{
-        color:rgb(189, 82, 11);
-    }
-}*/
-
-/*TABLETAS*/
-@media screen and (max-width:600px){
-    h1 , h2{
+    h2{
         font-size: 18px;
         text-align: center;
-        padding: 10px;
     }
     p{
         font-size: 15px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left:8px;
     }
     .logo{
         margin: auto;
@@ -300,12 +247,12 @@ footer{
         flex-direction: column;
     }
     .responsive-li{
-        font-size: 17px;
-        padding: 15px;
+        font-size: 20px;
+        padding: 12px;
     }
-    .d-block{
-        width: 100%;
+    img.d-block{
         height: 300px;
+        width: 100%;
     }
     .sugerencias img{
         width: 100px;
@@ -314,172 +261,110 @@ footer{
     .menu-opciones{
         flex-direction: column;
     }
-    .menu-opciones div{
+   .menu-opciones div{
         margin: 0;
-    }
-    .menu-opciones img{
+   }
+   .menu-opciones img{
         width: 100%;
         height: 300px;
-    }
-
-    form{
+   }
+   .cards{
+        grid-template-columns: repeat(3,150px);
+        justify-content: space-around;
+   }
+   .cards img{
+        width: 150px;
+        height: 150px;
+   }
+   .titulo-tarjeta{
+        font-size: 16px;
+        color: rgb(189, 82, 11);
+   }
+   .card-text{
+        font-size: 14px;
+   }
+   .titulo-decorado h2{
+        margin-bottom: -25px;
+        font-size: 18px;
+   }
+   .linea-decorativa{
+        background-image: url(https://popmenucloud.com/ckfbqnia/cdaa464b-da11-4c5f-b275-15cdfffbd18e.png);
+        width: 180px;
+        height: 30px;
+        background-size: cover;
+        margin: auto;
+        margin-bottom: 80px;
+   }
+   form{
         padding-left: 30px;
         padding-top: 20px;
-        padding-bottom: 30px;
+        padding-bottom:30px;
         background: black;
         width: 400px;
         border-radius: 5px;
-    }
-    .formulario{
+   }
+   .formulario{
         flex-direction: row;
         justify-content: space-around;
-    }
-    input, select{
-        display:flex;
+   }
+   .formulario img{
+        display: none;
+   }
+   .img-reservas img{
+        display: none;
+   }
+   input, select{
+        display: flex;
         padding: 10px;
         border: 2px solid rgb(189, 82, 11);
         border-radius: 5px;
-        width:300px;
+        width: 300px;
         margin-top: 20px;
         height: 40px;
         margin: 10px;
-    }
-    label{
+   }
+   label{
         color: white;
         margin: 10px;
-    }
-    .formulario button{
-        margin-top:20px ;
+   }
+   .formulario button{
+        margin-top: 20px;
         width: 80px;
         height: 40px;
         border-radius: 6px;
         background-color: rgb(189, 82, 11);
         border: none;
-    }
-    .footer{
+   }
+   .footer{
         display: grid;
         grid-template-columns: repeat(3,100px);
-        gap:5% ;
+        gap: 5%;
         justify-content: center;
-    }
-    .footer h3{
+   }
+   .footer h3{
         color: white;
         padding-top: 22px;
         font-size: 15px;
-        color:rgb(189, 82, 11) ;
-    }
-    .footer p{
+        color: rgb(189, 82, 11);
+   }
+   .footer p{
         color: white;
-        font-size: 12px;  
-        margin: -1px;  
-    }
-    .iconos-footer-ul{
+        font-size: 12px;
+        margin: -1px;
+   }
+   .iconos-footer-ul{
         display: flex;
         flex-direction: row;
-        justify-content: center;  
-    }
-    .iconos-footer-ul li{
+        justify-content: center;
+   }
+   .iconos-footer-ul li{
         font-size: 12px;
         margin: 4px;
-    }
-    .iconos-footer-ul i{
-        color:rgb(189, 82, 11);
-    }
-}
-    
-
-
-
-
-
-
-
-
-
-
-/*grid y mobile
-.grid{
-    display: grid;
-    grid-template-columns: 300px 200px 200px 100px;
-    grid-template-rows: 300px 90px 150px  ;
-    grid-template-areas:
-    "nav header header"
-    "nav productos aside"
-    "nav servicios aside" 
-    "footer footer footer";
-    margin: 20px;
-}
-header{
-    grid-area: header;
-    border: 1px solid black;
-    background: lightgreen;
-}
-nav{
-    grid-area: nav;
-    border: 1px solid black;
-    background: lightsalmon;
-}
-aside{
-    grid-area: aside;
-    border: 1px solid black;
-    background: lightskyblue;
-
-}
-footer{
-    grid-area: footer;
-    border: 1px solid black;
-    background: lightpink;
-
-}
-.productos{
-    grid-area:productos ;
-    border: 1px solid black;
-    background: lawngreen;
-}
-.servicios{
-    grid-area: servicios;
-    border: 1px solid black;
-    background: lightseagreen;
-}
-@media screen and (min-width:700px) {
-    
-    .grid-inicio{
-    display: grid;
-    grid-template-columns: 300px 200px 200px 100px;
-    grid-template-rows: 300px 90px 150px  ;
-    grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "servicios servicios aside" 
-    "productos productos aside"
-    "footer footer footer";
-    margin: 20px;
-    }
-    .border{
-        border: 2px solid red;
-    }
-
-    
-}
-@media screen and(min-width:1200px) {
-    .grid{
-        display: grid;
-        grid-template-columns: 300px 200px 200px 100px;
-        grid-template-rows: 300px 90px 150px  ;
-        grid-template-areas:
-        "header header header header header"
-        "nav productos productos productos aside"
-        "nav servicios servicios servicios aside" 
-        "footer footer footer footer footer";
-        margin: 20px;
-        }
-        .border{
-            border: 2px solid rgb(19, 7, 129);
-        }
-
-    
-}
-*/
+   }
+   .iconos-footer-ul i{
+        color: rgb(189, 82, 11);
+   }
+} 
 
 
 
