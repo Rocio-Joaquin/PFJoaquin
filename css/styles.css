@@ -26,11 +26,10 @@
 }
 
 .formulario-reservas form div button, .formulario-nosotros form div button {
-  width: 120px;
   background-color: rgb(189, 82, 11);
-  height: 60px;
   border: none;
   margin-left: 40%;
+  border-radius: 22px;
 }
 
 nav ul {
@@ -306,10 +305,6 @@ p strong {
 .formulario-nosotros form div label {
   color: rgb(255, 255, 255);
 }
-.formulario-nosotros form div button {
-  border-radius: 27px;
-}
-
 .mapa iframe {
   width: 100%;
   height: 300px;
@@ -350,10 +345,6 @@ p strong {
 .formulario-reservas form div label {
   color: rgb(255, 255, 255);
 }
-.formulario-reservas form div button {
-  border-radius: 27px;
-}
-
 p {
   font-size: 20px;
   margin: 20px;
@@ -443,7 +434,7 @@ p strong {
     height: 30px;
   }
   .formulario-nosotros form div button {
-    width: 70px;
+    width: 100px;
     height: 40px;
   }
   .formulario-reservas {
@@ -466,7 +457,7 @@ p strong {
     height: 30px;
   }
   .formulario-reservas form div button {
-    width: 70px;
+    width: 100px;
     height: 40px;
   }
   footer {
@@ -578,8 +569,8 @@ p strong {
     height: 30px;
   }
   .formulario-nosotros form div button {
-    width: 70px;
-    height: 40px;
+    width: 120px;
+    height: 60px;
   }
   .formulario-reservas {
     flex-direction: row;
@@ -603,8 +594,8 @@ p strong {
     height: 30px;
   }
   .formulario-reservas form div button {
-    width: 70px;
-    height: 40px;
+    width: 120px;
+    height: 60px;
   }
   footer {
     height: 250px;
