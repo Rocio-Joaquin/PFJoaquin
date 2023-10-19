@@ -1,374 +1,632 @@
-*{
-    margin:0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Noto Sans SC', sans-serif;
-}
-h1 , h2{
-    font-size: 30px;
-    text-align: center;
-    padding: 20px;
-}
-p{
-    font-size: 22px;
-    margin-left:10px;
-    margin-right:10px;
-}
-strong{
-    color: rgb(189, 82, 11);
-}
-/* HEADER*/
-.responsive-ul{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    background: rgb(0, 0, 0);
-    margin: 0;
-}
-.responsive-li{
-    font-size: 20px;
-    padding: 20px;
-}
-.responsive-li a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-.logo{
-    font-size: 30px;
-    text-align: start;
-    margin-right: 80px;
-}
-.logo a{
-    color: rgb(189, 82, 11);
-    text-decoration: none;
+.formulario-reservas form, .formulario-nosotros form {
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background: black;
 }
 
-/*INICIO*/
-.responsive-li a:hover{
-    color: rgb(189, 82, 11);
+.formulario-reservas form div input, .formulario-nosotros form div input {
+  height: 35px;
+  border-bottom: 2px solid rgb(189, 82, 11);
+  background: rgba(75, 75, 75, 0.35);
+  border-right: unset;
+  border-top: unset;
+  border-left: unset;
+  color: black;
 }
-.sugerencias{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+.formulario-reservas form div select, .formulario-nosotros form div select {
+  height: 35px;
+  border-bottom: 2px solid rgb(189, 82, 11);
+  background: rgba(75, 75, 75, 0.35);
+  border-right: unset;
+  border-top: unset;
+  border-left: unset;
+  color: black;
 }
-.sugerencias img{
-    display: flex;
-    margin: 3px;
-    width: 200px;
-    height: 200px;
+
+.formulario-reservas form div button, .formulario-nosotros form div button {
+  width: 120px;
+  background-color: rgb(189, 82, 11);
+  height: 60px;
+  border: none;
+  margin-left: 40%;
 }
-img.d-block{
-    width: 100%;
-    height: 600px;
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: black;
+  margin: 0;
 }
-/*MENU*/
-.cards{
-    display: grid;
-    grid-template-columns: repeat(3,400px);
-    justify-content: space-around;
+nav ul li {
+  padding: 20px;
+  font-size: 20px;
 }
-button.btn {
-    background-color: rgb(189, 82, 11);
-    border: none;
-    width: auto;
-    border-radius: none;
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-button.btn a{
-    text-decoration: none;
-    list-style: none;
-    color: black;
-}  
-.menu-opciones{
-    display: flex;
+nav ul li a:hover {
+  color: rgb(189, 82, 11);
 }
-.menu-opciones div{
-    display: flex;
+nav ul .logo {
+  font-size: 30px;
+  text-align: start;
+  margin-right: 80px;
+}
+
+footer {
+  background: black;
+  height: 250px;
+  margin-top: 30px;
+}
+footer .footer {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  gap: 10%;
+  justify-content: center;
+}
+footer .footer h3 {
+  padding-top: 50px;
+  font-size: 35px;
+  color: rgb(189, 82, 11);
+}
+footer .footer p {
+  font-size: 16px;
+  margin: -1px;
+  color: rgb(255, 255, 255);
+}
+footer .footer .iconos-footer-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 80px;
+}
+footer .footer .iconos-footer-ul li {
+  font-size: 18px;
+  padding: 5px;
+}
+footer .footer .iconos-footer-ul li i {
+  color: rgb(189, 82, 11);
+}
+
+/*
+@media (max-width:500px){
+    footer{
+        height: 250px;
+        .footer{
+            grid-template-columns: repeat(3,100px);
+            gap: 5%;
+            h3{
+                padding-top: 20px;
+                font-size: 17px;
+            }
+            p{
+                font-size: 13px; 
+            }
+            .iconos-footer-ul{
+                margin-right: 40px;
+                li{
+                    font-size: 15px;
+                    padding: 3px;    
+                } 
+            }
+        }    
+    }
+
+}
+
+@media (min-width:$mediaMobile) and (max-width:$mediaTablet){
+    footer{
+        height: 250px;
+        .footer{
+            grid-template-columns: repeat(3,150px);
+            gap: 3%;
+            h3{
+                padding-top: 22px;
+                font-size: 18px;
+            }
+            p{
+                font-size: 15px; 
+            }
+            .iconos-footer-ul{
+                margin-right: 40px;
+                li{
+                    font-size: 15px;
+                    padding: 4px;    
+                } 
+            }
+        }    
+    }
+
+}
+@media (min-width:$mediaDesktop){
+    footer{
+        height: 250px;
+        .footer{
+            grid-template-columns: repeat(3,180px);
+            gap: 9%;
+            h3{
+                padding-top: 22px;
+                font-size: 25px;
+            }
+            p{
+                font-size: 16px; 
+            }
+            .iconos-footer-ul{
+                margin-right: 40px;
+                li{
+                    font-size: 18px;
+                    padding: 4px;    
+                } 
+            }
+        }    
+    }
+
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+img.d-block {
+  width: 100%;
+  height: 600px;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+h1 strong {
+  color: rgb(189, 82, 11);
+}
+
+p {
+  font-size: 20px;
+  padding: 5px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+h2 strong {
+  color: rgb(189, 82, 11);
+}
+
+.sugerencias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sugerencias img {
+  margin: 3px;
+  width: 200px;
+  height: 200px;
+}
+
+.menu-opciones {
+  display: flex;
+}
+.menu-opciones div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  border: none;
+}
+.menu-opciones div img {
+  width: 340px;
+  height: 480px;
+}
+.menu-opciones div a {
+  text-decoration: none;
+  color: rgb(189, 82, 11);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: space-around;
+}
+.cards img {
+  width: 320px;
+  height: 300px;
+}
+.cards .titulo-tarjeta {
+  font-size: 25px;
+  color: rgb(189, 82, 11);
+}
+.cards .card-text {
+  font-size: 18px;
+  margin-left: -10px;
+}
+
+.titulo-decorado {
+  margin: 10px;
+}
+.titulo-decorado h2 {
+  font-size: 30px;
+  margin-bottom: -20px;
+}
+.titulo-decorado .linea-decorativa {
+  background-image: url(https://popmenucloud.com/ckfbqnia/cdaa464b-da11-4c5f-b275-15cdfffbd18e.png);
+  width: 280px;
+  height: 40px;
+  background-size: cover;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px;
+}
+p strong {
+  color: rgb(189, 82, 11);
+}
+
+.formulario-nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.formulario-nosotros img {
+  width: 450px;
+  height: 450px;
+}
+.formulario-nosotros form {
+  width: 500px;
+  height: 450px;
+}
+.formulario-nosotros form div {
+  margin: 12px;
+  font-size: 20px;
+  padding: 6px;
+}
+.formulario-nosotros form div label {
+  color: rgb(255, 255, 255);
+}
+.formulario-nosotros form div button {
+  border-radius: 27px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px;
+}
+p strong {
+  color: rgb(189, 82, 11);
+}
+
+.formulario-reservas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.formulario-reservas img {
+  width: 600px;
+  height: 700px;
+}
+.formulario-reservas form {
+  width: 500px;
+  height: 600px;
+}
+.formulario-reservas form div {
+  margin: 12px;
+  font-size: 20px;
+  padding: 6px;
+}
+.formulario-reservas form div label {
+  color: rgb(255, 255, 255);
+}
+.formulario-reservas form div button {
+  border-radius: 27px;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px;
+}
+p strong {
+  color: rgb(189, 82, 11);
+}
+
+@media (max-width: 768px) {
+  nav ul {
     flex-direction: column;
     justify-content: center;
-    margin-top:40px;
-    margin-bottom: 100px;
-    border: none;
-}
-.menu-opciones img{
-    width:350px;
-    height: 450px;
-}
-.boton-estilo{
-    width: 350px;
+  }
+  nav ul li {
+    font-size: 18px;
+  }
+  .logo {
+    font-size: 19px;
+  }
+  img.d-block {
+    height: 300px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .sugerencias img {
+    width: 100px;
+    height: 100px;
+  }
+  .menu-opciones {
+    flex-direction: column;
+  }
+  .menu-opciones div {
+    margin: 0;
+  }
+  .menu-opciones div img {
+    width: 100%;
+    height: 280px;
+  }
+  .cards {
+    grid-template-columns: repeat(3, 150px);
+  }
+  .cards img {
+    width: 150px;
+    height: 100px;
+  }
+  .cards .titulo-tarjeta {
+    font-size: 15px;
+  }
+  .cards .card-text {
+    font-size: 12px;
+  }
+  .titulo-decorado {
+    margin: 5px;
+  }
+  .titulo-decorado h2 {
+    font-size: 22px;
+  }
+  .titulo-decorado .linea-decorativa {
+    width: 200px;
+    height: 30px;
+  }
+  .formulario-nosotros {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .formulario-nosotros img {
+    display: none;
+  }
+  .formulario-nosotros form {
+    width: 100%;
+    height: 390px;
+  }
+  .formulario-nosotros form div {
+    font-size: 18px;
+  }
+  .formulario-nosotros form div input {
+    width: 150px;
+  }
+  .formulario-nosotros form div select {
+    height: 30px;
+  }
+  .formulario-nosotros form div button {
+    width: 70px;
     height: 40px;
-    color: rgb(189, 82, 11);
-    background: black;
-    border:1px solid rgb(189, 82, 11);
+  }
+  .formulario-reservas {
+    flex-direction: column;
+  }
+  .formulario-reservas img {
+    display: none;
+  }
+  .formulario-reservas form {
+    width: 100%;
+    height: 500px;
+  }
+  .formulario-reservas form div {
+    font-size: 18px;
+  }
+  .formulario-reservas form div input {
+    width: 150px;
+  }
+  .formulario-reservas form div select {
+    height: 30px;
+  }
+  .formulario-reservas form div button {
+    width: 70px;
+    height: 40px;
+  }
+  footer {
+    height: 250px;
+  }
+  footer .footer {
+    grid-template-columns: repeat(3, 100px);
+    gap: 4%;
+  }
+  footer .footer h3 {
+    padding-top: 20px;
+    font-size: 17px;
+  }
+  footer .footer p {
+    font-size: 13px;
+  }
+  footer .footer .iconos-footer-ul {
+    margin-right: 40px;
+  }
+  footer .footer .iconos-footer-ul li {
+    font-size: 15px;
+    padding: 3px;
+  }
 }
-.boton-estilo a{
-    list-style: none;
-}
-button.btn{
-    color: red;
-}
-.container img{
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+  }
+  nav ul li {
+    font-size: 22px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  img.d-block {
+    height: 500px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  .sugerencias img {
     width: 200px;
     height: 200px;
-}
-.cards img{
-    width: 500px;
-    height: 200px;
-}
-.titulo-tarjeta{
-    font-size: 22px;
-    color: rgb(189, 82, 11);
-}
-.titulo-decorado h2{
-    margin-bottom: -22px;
-}
-.linea-decorativa{
-    background-image: url(https://popmenucloud.com/ckfbqnia/cdaa464b-da11-4c5f-b275-15cdfffbd18e.png);
+  }
+  .menu-opciones {
+    flex-direction: row;
+  }
+  .menu-opciones div {
+    margin: 0;
+  }
+  .menu-opciones div img {
+    width: 100%;
+    height: 480px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    justify-content: space-around;
+  }
+  .cards img {
     width: 280px;
+    height: 240px;
+  }
+  .cards .titulo-tarjeta {
+    font-size: 17px;
+    color: rgb(189, 82, 11);
+  }
+  .cards .card-text {
+    font-size: 14px;
+    margin-left: -10px;
+  }
+  .titulo-decorado {
+    margin: 5px;
+  }
+  .titulo-decorado h2 {
+    font-size: 30px;
+  }
+  .titulo-decorado .linea-decorativa {
+    width: 250px;
+    height: 35px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  .formulario-nosotros {
+    flex-direction: row;
+  }
+  .formulario-nosotros img {
+    width: 350px;
+    height: 390px;
+  }
+  .formulario-nosotros form {
+    width: 500px;
+    height: 390px;
+  }
+  .formulario-nosotros form div {
+    font-size: 20px;
+  }
+  .formulario-nosotros form div input {
+    width: 150px;
+  }
+  .formulario-nosotros form div select {
+    height: 30px;
+  }
+  .formulario-nosotros form div button {
+    width: 70px;
     height: 40px;
-    background-size: cover;
-    margin: auto;
-    margin-bottom: 80px;
-}
-.card-text{
-    font-size: large;
-}
-/*RESERVAS*/ /*NOSOTROS*/
-form{
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    background: black;
-    width: 700px;
-    /*border-radius: 5px;*/
-}
-.formulario{
-    display: flex;
+  }
+  .formulario-reservas {
     flex-direction: row;
     justify-content: center;
-}
-.formulario img{
-    width: 400px;
-    height:400px; 
-}
-.img-reservas img{
+  }
+  .formulario-reservas img {
+    width: 450px;
+    height: 600px;
+  }
+  .formulario-reservas form {
     width: 500px;
     height: 600px;
-}
-input, select{
-    padding: 10px;
-    border: 2px solid rgb(189, 82, 11);
-    border-radius: 5px;
-    width:650px;
-    margin-top: 20px;
-    height: 40px;
-}
-select{
-    height: 50px;
-}
-label{
-    color: white;
-}
-.formulario button{
-    margin-top:30px ;
-    width: 80px;
-    height: 40px;
-    border-radius: 6px;
-    background-color: rgb(189, 82, 11);
-    border: none;
-}
-/*LOCATIONS*/
-.img-mapa{
-    width: 80vw;
-    height: 80vh;
-    margin: auto;
-    background-image: url(https://popmenucloud.com/cdn-cgi/image/width%3D1440%2Cheight%3D1440%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/ckfbqnia/4966d5b9-451b-473e-b693-828ce41e1229.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 100px;
-}
-/*FOOTER*/
-footer{
-    background: rgb(0, 0, 0);
-    height: 250px;
-}
-.footer{
-    display: grid;
-    grid-template-columns: repeat(3,250px);
-    gap:10% ;
-    justify-content: center;
-}
-.footer h3{
-    color: white;
-    padding-top: 50px;
-    font-size: 30px;
-    color:rgb(189, 82, 11) ;
-}
-.footer p{
-    color: white;
-    font-size: 18px;  
-    margin: -1px;  
-}
-.iconos-footer-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;  
-}
-.iconos-footer-ul li{
-    display: flex;
+  }
+  .formulario-reservas form div {
     font-size: 20px;
-    margin: 7px;
+  }
+  .formulario-reservas form div input {
+    width: 150px;
+  }
+  .formulario-reservas form div select {
+    height: 30px;
+  }
+  .formulario-reservas form div button {
+    width: 70px;
+    height: 40px;
+  }
+  footer {
+    height: 250px;
+  }
+  footer .footer {
+    grid-template-columns: repeat(3, 220px);
+    gap: 6%;
+  }
+  footer .footer h3 {
+    padding-top: 20px;
+    font-size: 22px;
+  }
+  footer .footer p {
+    font-size: 18px;
+  }
+  footer .footer .iconos-footer-ul {
+    margin-right: 40px;
+  }
+  footer .footer .iconos-footer-ul li {
+    font-size: 18px;
+    padding: 3px;
+  }
 }
-.iconos-footer-ul i{
-    color:rgb(189, 82, 11);
-}
-/*VISTA MOBILE*/
-@media (min-width:500px) and (max-width:700px){
-    h1{
-        font-size: 20px;
-        text-align: center;
-    }
-    h2{
-        font-size: 18px;
-        text-align: center;
-    }
-    p{
-        font-size: 15px;
-        margin-left:8px;
-    }
-    .logo{
-        margin: auto;
-    }
-    .responsive-ul{
-        flex-direction: column;
-    }
-    .responsive-li{
-        font-size: 20px;
-        padding: 12px;
-    }
-    img.d-block{
-        height: 300px;
-        width: 100%;
-    }
-    .sugerencias img{
-        width: 100px;
-        height: 100px;
-    }
-    .menu-opciones{
-        flex-direction: column;
-    }
-   .menu-opciones div{
-        margin: 0;
-   }
-   .menu-opciones img{
-        width: 100%;
-        height: 300px;
-   }
-   .cards{
-        grid-template-columns: repeat(3,150px);
-        justify-content: space-around;
-   }
-   .cards img{
-        width: 150px;
-        height: 150px;
-   }
-   .titulo-tarjeta{
-        font-size: 16px;
-        color: rgb(189, 82, 11);
-   }
-   .card-text{
-        font-size: 14px;
-   }
-   .titulo-decorado h2{
-        margin-bottom: -25px;
-        font-size: 18px;
-   }
-   .linea-decorativa{
-        background-image: url(https://popmenucloud.com/ckfbqnia/cdaa464b-da11-4c5f-b275-15cdfffbd18e.png);
-        width: 180px;
-        height: 30px;
-        background-size: cover;
-        margin: auto;
-        margin-bottom: 80px;
-   }
-   form{
-        padding-left: 30px;
-        padding-top: 20px;
-        padding-bottom:30px;
-        background: black;
-        width: 400px;
-        border-radius: 5px;
-   }
-   .formulario{
-        flex-direction: row;
-        justify-content: space-around;
-   }
-   .formulario img{
-        display: none;
-   }
-   .img-reservas img{
-        display: none;
-   }
-   input, select{
-        display: flex;
-        padding: 10px;
-        border: 2px solid rgb(189, 82, 11);
-        border-radius: 5px;
-        width: 300px;
-        margin-top: 20px;
-        height: 40px;
-        margin: 10px;
-   }
-   label{
-        color: white;
-        margin: 10px;
-   }
-   .formulario button{
-        margin-top: 20px;
-        width: 80px;
-        height: 40px;
-        border-radius: 6px;
-        background-color: rgb(189, 82, 11);
-        border: none;
-   }
-   .footer{
-        display: grid;
-        grid-template-columns: repeat(3,100px);
-        gap: 5%;
-        justify-content: center;
-   }
-   .footer h3{
-        color: white;
-        padding-top: 22px;
-        font-size: 15px;
-        color: rgb(189, 82, 11);
-   }
-   .footer p{
-        color: white;
-        font-size: 12px;
-        margin: -1px;
-   }
-   .iconos-footer-ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-   }
-   .iconos-footer-ul li{
-        font-size: 12px;
-        margin: 4px;
-   }
-   .iconos-footer-ul i{
-        color: rgb(189, 82, 11);
-   }
-} 
 
-
-
-
-
-
-
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,48 @@
+h2{
+    font-size:30px;
+    text-align: center;
+    margin: 20px;
+
+}
+p{
+    font-size:20px ;
+    margin: 20px;
+    strong{
+        color: $colorUno;
+    }
+}
+.formulario-nosotros{
+    @include formulario(flex, row, center);
+    img{
+        width: 450px;
+        height: 450px;
+    }    
+    form{
+        @extend %form;
+        width: 500px;
+        height: 450px;
+            div{
+                margin:12px;
+                font-size: 20px;
+                padding: 6px;
+                label{
+                    color:$colorTres;
+                }
+                input{
+                    @extend %input;
+                }    
+                select{
+                    @extend %select;
+                }   
+                button{
+                    @extend %button;
+                    border-radius: 27px;
+                }
+            }
+        }
+    }
+
+            
+                      
+                
+                 

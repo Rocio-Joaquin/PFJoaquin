@@ -1,0 +1,39 @@
+
+.formulario-reservas{
+    @include formulario(flex,row,center);
+    img{
+        width: 600px;
+        height: 700px;
+    }    
+    form{
+        @extend %form;
+        width:500px ;
+        height:600px ;
+            div{
+                margin:12px;
+                font-size: 20px;
+                padding: 6px;
+                label{
+                    color: $colorTres;
+                }
+                input{
+                    @extend %input;
+                }    
+                select{
+                    @extend %select;
+                }   
+                button{
+                    @extend %button;
+                    border-radius: 27px;
+      
+                }
+            }
+        }
+    }
+    p{
+        font-size: 20px;
+        margin:20px ;
+        strong{
+            color:$colorUno;
+        }
+    } 

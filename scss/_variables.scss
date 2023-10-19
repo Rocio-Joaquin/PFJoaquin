@@ -1,0 +1,60 @@
+//COLORES
+$colorUno:rgb(189 , 82 ,11);
+$colorDos:black;
+$colorTres:rgb(255, 255, 255);
+$colorCuatro:rgb(75 75 75 / 35%);
+//MEDIAS-QUERIS
+$mediaMobile:768px;
+$mediaDesktop:768px;
+//MIXINS
+@mixin flex ($display,$flex-direction,$just,$a-content,$a-items){
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $just;
+    align-content: $a-content;
+    align-items: $a-items;
+}
+@mixin formulario ($display,$flex-direction,$just){
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $just;
+}
+//EXTEND
+%form{
+padding-left: 30px;
+padding-top: 20px;
+padding-bottom: 30px;
+background:$colorDos;
+}
+%input{
+    height: 35px;
+    border-bottom: 2px solid $colorUno;
+    background: $colorCuatro;
+    border-right: unset;
+    border-top: unset;
+    border-left: unset;
+    color: $colorDos;
+}
+%select{
+    height: 35px;
+    border-bottom: 2px solid $colorUno;
+    background: $colorCuatro;
+    border-right: unset;
+    border-top: unset;
+    border-left: unset;
+    color: $colorDos;
+}
+%button{
+    width:120px;
+    background-color:$colorUno;
+    height:60px;
+    border: none;
+    margin-left: 40%;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,288 @@
+
+@media (max-width:$mediaMobile){
+    //header mobile
+    nav ul{
+        flex-direction: column;
+        justify-content: center;
+        li{
+            font-size: 18px;
+        }
+    }
+    .logo{
+        font-size: 19px;
+    }
+    //inicio
+    img.d-block{
+        height: 300px;
+    }
+    h1{
+        font-size:20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h2{
+        font-size:18px ;
+    }
+    .sugerencias img{
+        width: 100px;
+        height: 100px;
+    }
+    //menu
+    .menu-opciones{
+        flex-direction: column;
+        div{
+            margin:0;
+            img{
+                width:100%;
+                height:280px;
+            }
+        }    
+    }
+    .cards{
+        grid-template-columns:repeat(3,150px);
+        img{
+            width: 150px;
+            height:100px;
+        }
+        .titulo-tarjeta{
+            font-size: 15px;
+        }
+        .card-text{
+            font-size: 12px;
+        }
+    }
+    .titulo-decorado{
+        margin: 5px;
+        h2{
+            font-size: 22px;
+        }
+        .linea-decorativa{
+            width:200px ;
+            height:30px ;
+
+        }
+    }
+    //nosotros
+    .formulario-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        img{
+            display: none;
+        }
+        form{
+            width: 100%;
+            height:390px ;
+            div{
+                font-size: 18px;
+                input{
+                    width: 150px;
+                }
+                select{
+                    height: 30px; 
+
+                }
+                button{
+                    width: 70px;
+                    height:40px ;
+
+                }
+            }
+        }
+    }
+    //reservas
+    .formulario-reservas{
+        flex-direction: column;
+        img{
+            display: none;
+        }
+        form{
+            width: 100%;
+            height:500px ;
+            div{
+                font-size: 18px;
+                input{
+                    width: 150px;
+                }
+                select{
+                    height: 30px; 
+
+                }
+                button{
+                    width: 70px;
+                    height:40px ;
+                }
+            }
+        }
+    }
+    //locations
+    //footer
+    footer{
+        height: 250px;
+        .footer{
+            grid-template-columns: repeat(3,100px);
+            gap: 4%;
+            h3{
+                padding-top: 20px;
+                font-size: 17px;
+            }
+            p{
+                font-size: 13px; 
+            }
+            .iconos-footer-ul{
+                margin-right: 40px;
+                li{
+                    font-size: 15px;
+                    padding: 3px;    
+                } 
+            }
+        }    
+    }
+}
+
+
+@media (min-width:$mediaDesktop){
+    //header
+    nav ul{
+        flex-direction: row;
+        li{
+            font-size: 22px;
+        }
+    }
+    .logo{
+        font-size: 30px;
+    }
+    //inicio
+    img.d-block{
+        height: 500px;
+    }
+    h1{
+        font-size:22px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h2{
+        font-size:21px ;
+    }
+    .sugerencias img{
+        width: 200px;
+        height: 200px;
+    }
+    //menu
+    .menu-opciones{
+        flex-direction: row;
+        div{
+            margin:0;
+            img{
+                width:100%;
+                height:480px;
+            }
+        }    
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3,280px);
+        justify-content: space-around;
+        
+        img{
+            width:280px;
+            height:240px;
+        }
+        .titulo-tarjeta{
+            font-size: 17px;
+            color:$colorUno;
+        }
+        .card-text{
+            font-size: 14px;
+            margin-left: -10px;
+        }
+    }
+    .titulo-decorado{
+        margin: 5px;
+        h2{
+            font-size: 30px;
+        }
+        .linea-decorativa{
+            width:250px ;
+            height:35px ;
+        }
+    }
+    //nosotros
+    h2{
+        font-size:21px ;
+    }
+    .formulario-nosotros{
+        flex-direction: row;
+        img{
+            width: 350px;
+            height: 390px;
+        }
+        form{
+            width: 500px;
+            height:390px ;
+            div{
+                font-size: 20px;
+                input{
+                    width: 150px;
+                }
+                select{
+                    height: 30px; 
+                }
+                button{
+                    width: 70px;
+                    height:40px ;
+                }
+            }
+        }
+    }
+    //reservas
+    .formulario-reservas{
+        flex-direction: row;
+        justify-content: center;
+        img{
+            width:450px ;
+            height: 600px;
+        }
+        form{
+            width: 500px;
+            height:600px ;
+            div{
+                font-size: 20px;
+                input{
+                    width: 150px;
+                }
+                select{
+                    height: 30px; 
+                }
+                button{
+                    width: 70px;
+                    height:40px ;
+                }
+            }
+        }
+    }
+    //locations
+    //footer
+    footer{
+        height: 250px;
+        .footer{
+            grid-template-columns: repeat(3,220px);
+            gap: 6%;
+            h3{
+                padding-top: 20px;
+                font-size: 22px;
+            }
+            p{
+                font-size: 18px; 
+            }
+            .iconos-footer-ul{
+                margin-right: 40px;
+                li{
+                    font-size: 18px;
+                    padding: 3px;    
+                } 
+            }
+        }    
+    }
+}

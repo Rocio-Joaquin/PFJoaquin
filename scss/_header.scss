@@ -1,0 +1,25 @@
+
+    
+nav ul{
+    @include flex(flex ,row,center,center,center);
+    background:$colorDos;
+    margin: 0;
+    li{
+        padding: 20px;
+        font-size: 20px;
+        a{
+            color: $colorTres;
+            text-decoration: none;
+            &:hover{
+                color: $colorUno;
+            }
+        }
+    }
+    .logo{
+        font-size: 30px;
+        text-align: start;
+        margin-right: 80px;
+    } 
+}    
+    
+

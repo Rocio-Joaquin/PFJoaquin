@@ -1,0 +1,36 @@
+
+img.d-block{
+    width: 100%;
+    height: 600px;
+}  
+h1{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    strong{
+        color:$colorUno;
+    }
+}    
+p{
+    font-size: 20px;
+    padding:5px;         
+}  
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    strong{
+        color:$colorUno;
+    }
+}
+.sugerencias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+        margin: 3px;
+        width: 200px;
+        height: 200px;
+    }
+}  
