@@ -1,5 +1,5 @@
 
-    
+ /*   
 nav ul{
     @include flex(flex ,row,center,center,center);
     background:$colorDos;
@@ -20,6 +20,41 @@ nav ul{
         text-align: start;
         margin-right: 80px;
     } 
-}    
+}    */
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    .bg-body-tertiary{
+        background: $colorUno;
+    
+
+    }
+    .container-fluid{
+        justify-content: space-around;
+    }
+    .navbar-brand{
+        color:$colorUno;
+        font-size: 30px;
+        margin-right:25%;/*32%*/
+        margin-left: 2%;
+        font-family: 'Oswald', sans-serif;
+    }
+    .nav-item{
+        padding: auto;
+        .nav-link.active{
+            color: $colorUno;
+            font-size: 22px;
+            margin: 8px;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}
+  
+
+
+
+
     
 

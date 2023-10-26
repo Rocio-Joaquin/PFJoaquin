@@ -6,9 +6,9 @@
         li{
             font-size: 18px;
         }
-    }
-    .logo{
-        font-size: 19px;
+        .logo{
+            font-size: 21px;
+        }
     }
     //inicio
     img.d-block{
@@ -63,6 +63,7 @@
         }
     }
     //nosotros
+    /*
     .formulario-nosotros{
         flex-direction: column;
         justify-content: center;
@@ -75,9 +76,11 @@
             div{
                 font-size: 18px;
                 input{
+                    @extend %input;
                     width: 150px;
                 }
                 select{
+                    @extend %select;
                     height: 30px; 
 
                 }
@@ -86,10 +89,14 @@
                     width: 100px;
                     height:40px ;
                 }
+                label{
+                    font-size: 15px;
+                }
             }
         }
-    }
+    }*/
     //reservas
+    /*
     .formulario-reservas{
         flex-direction: column;
         img{
@@ -101,9 +108,11 @@
             div{
                 font-size: 18px;
                 input{
+                    @extend %input;
                     width: 150px;
                 }
                 select{
+                    @extend %select;
                     height: 30px; 
 
                 }
@@ -112,9 +121,12 @@
                     width: 100px;
                     height:40px ;
                 }
+                label{
+                    font-size: 15px;
+                }
             }
         }
-    }
+    }*/
     //locations
     //footer
     footer{
@@ -140,7 +152,7 @@
     }
 }
 
-
+/*
 @media (min-width:$mediaDesktop){
     //header
     nav ul{
@@ -212,6 +224,7 @@
     h2{
         font-size:21px ;
     }
+    /*boot
     .formulario-nosotros{
         flex-direction: row;
         img{
@@ -233,10 +246,14 @@
                     width: 120px;
                     height:60px ;
                 }
+                label{
+                    font-size: 15px;
+                }
             }
         }
-    }
+    }*/
     //reservas
+    /*
     .formulario-reservas{
         flex-direction: row;
         justify-content: center;
@@ -259,11 +276,15 @@
                     width: 120px;
                     height:60px ;
                 }
+                label{
+                    font-size: 15px;
+                }
             }
         }
-    }
+    }*/
     //locations
     //footer
+    /*
     footer{
         height: 250px;
         .footer{
@@ -285,4 +306,4 @@
             }
         }    
     }
-}
+}*/

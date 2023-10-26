@@ -1,61 +1,126 @@
-.formulario-reservas form, .formulario-nosotros form {
+section form, .formulario-nosotros form {
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 30px;
   background: black;
+  padding-left: 40px;
+  margin-right: 150px;
+  background: black;
+  /*width: 600px;
+  height: 600px;*/
 }
 
-.formulario-reservas form div input, .formulario-nosotros form div input {
+section form input, .formulario-nosotros form input {
+  /*
   height: 35px;
-  border-bottom: 2px solid rgb(189, 82, 11);
-  background: rgba(75, 75, 75, 0.35);
+  border-bottom: 2px solid $colorUno;
+  background: $colorCuatro;
   border-right: unset;
   border-top: unset;
   border-left: unset;
-  color: black;
+  color: $colorDos;*/
+  padding: 20px;
+  /*width: 600px;*/
+  background: black;
+  border-bottom: 2px solid rgb(189, 82, 11);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+  margin-top: 20px;
 }
 
-.formulario-reservas form div select, .formulario-nosotros form div select {
+section form select, .formulario-nosotros form select {
+  /*
   height: 35px;
-  border-bottom: 2px solid rgb(189, 82, 11);
-  background: rgba(75, 75, 75, 0.35);
+  border-bottom: 2px solid $colorUno;
+  background: $colorCuatro;
   border-right: unset;
   border-top: unset;
   border-left: unset;
-  color: black;
+  color: $colorDos;*/
+  background: black;
+  color: rgb(189, 82, 11);
+  border: 1px solid rgb(189, 82, 11);
 }
 
-.formulario-reservas form div button, .formulario-nosotros form div button {
-  background-color: rgb(189, 82, 11);
+section form button, .formulario-nosotros form button {
+  /*
+  background-color:$colorUno;
   border: none;
   margin-left: 40%;
-  border-radius: 22px;
+  border-radius: 22px;*/
+  margin-top: 30px;
+  background-color: black;
+  color: rgb(189, 82, 11);
+  border: 1px solid rgb(189, 82, 11);
+  width: 100px;
+  height: 40px;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+section form textarea, .formulario-nosotros form textarea {
+  width: 300px;
   background: black;
-  margin: 0;
+  border-bottom: 2px solid rgb(189, 82, 11);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;
 }
-nav ul li {
+
+section form label, .formulario-nosotros form label {
   padding: 20px;
-  font-size: 20px;
+  color: white;
 }
-nav ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+
+/*   
+nav ul{
+    @include flex(flex ,row,center,center,center);
+    background:$colorDos;
+    margin: 0;
+    li{
+        padding: 20px;
+        font-size: 20px;
+        a{
+            color: $colorTres;
+            text-decoration: none;
+            &:hover{
+                color: $colorUno;
+            }
+        }
+    }
+    .logo{
+        font-size: 30px;
+        text-align: start;
+        margin-right: 80px;
+    } 
+}    */
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-nav ul li a:hover {
+nav .bg-body-tertiary {
+  background: rgb(189, 82, 11);
+}
+nav .container-fluid {
+  justify-content: space-around;
+}
+nav .navbar-brand {
   color: rgb(189, 82, 11);
-}
-nav ul .logo {
   font-size: 30px;
-  text-align: start;
-  margin-right: 80px;
+  margin-right: 25%; /*32%*/
+  margin-left: 2%;
+  font-family: "Oswald", sans-serif;
+}
+nav .nav-item {
+  padding: auto;
+}
+nav .nav-item .nav-link.active {
+  color: rgb(189, 82, 11);
+  font-size: 22px;
+  margin: 8px;
+  font-family: "Roboto", sans-serif;
 }
 
 footer {
@@ -71,11 +136,12 @@ footer .footer {
 }
 footer .footer h3 {
   padding-top: 50px;
-  font-size: 35px;
+  font-size: 30px;
   color: rgb(189, 82, 11);
+  font-family: "Anton", sans-serif;
 }
 footer .footer p {
-  font-size: 16px;
+  font-size: 20px;
   margin: -1px;
   color: rgb(255, 255, 255);
 }
@@ -86,88 +152,13 @@ footer .footer .iconos-footer-ul {
   margin-right: 80px;
 }
 footer .footer .iconos-footer-ul li {
-  font-size: 18px;
+  font-size: 20px;
   padding: 5px;
 }
 footer .footer .iconos-footer-ul li i {
   color: rgb(189, 82, 11);
 }
 
-/*
-@media (max-width:500px){
-    footer{
-        height: 250px;
-        .footer{
-            grid-template-columns: repeat(3,100px);
-            gap: 5%;
-            h3{
-                padding-top: 20px;
-                font-size: 17px;
-            }
-            p{
-                font-size: 13px; 
-            }
-            .iconos-footer-ul{
-                margin-right: 40px;
-                li{
-                    font-size: 15px;
-                    padding: 3px;    
-                } 
-            }
-        }    
-    }
-
-}
-
-@media (min-width:$mediaMobile) and (max-width:$mediaTablet){
-    footer{
-        height: 250px;
-        .footer{
-            grid-template-columns: repeat(3,150px);
-            gap: 3%;
-            h3{
-                padding-top: 22px;
-                font-size: 18px;
-            }
-            p{
-                font-size: 15px; 
-            }
-            .iconos-footer-ul{
-                margin-right: 40px;
-                li{
-                    font-size: 15px;
-                    padding: 4px;    
-                } 
-            }
-        }    
-    }
-
-}
-@media (min-width:$mediaDesktop){
-    footer{
-        height: 250px;
-        .footer{
-            grid-template-columns: repeat(3,180px);
-            gap: 9%;
-            h3{
-                padding-top: 22px;
-                font-size: 25px;
-            }
-            p{
-                font-size: 16px; 
-            }
-            .iconos-footer-ul{
-                margin-right: 40px;
-                li{
-                    font-size: 18px;
-                    padding: 4px;    
-                } 
-            }
-        }    
-    }
-
-}
-*/
 * {
   margin: 0;
   padding: 0;
@@ -228,7 +219,7 @@ h2 strong {
   border: none;
 }
 .menu-opciones div img {
-  width: 340px;
+  width: 380px;
   height: 480px;
 }
 .menu-opciones div a {
@@ -270,41 +261,152 @@ h2 strong {
   margin-bottom: 80px;
 }
 
-h2 {
+/*h2{
+    font-size:30px;
+    text-align: center;
+    margin: 20px;
+}
+p{
+    font-size:20px ;
+    margin: 20px;
+    strong{
+        color: $colorUno;
+    }
+}*/
+/*
+.formulario-nosotros{
+    @include formulario(flex, row, center);
+    img{
+        width: 450px;
+        height: 450px;
+    }    
+    form{
+        @extend %form;
+        width: 500px;
+        height: 450px;
+            div{
+                margin:12px;
+                font-size: 20px;
+                padding: 6px;
+                label{
+                    color:$colorTres;
+                }
+                input{
+                    @extend %input;
+                }    
+                select{
+                    @extend %select;
+                }   
+                button{
+                    @extend %button;
+                }
+            }
+        }
+    }
+*/
+/*form{
+    margin: auto;
+    background: black;
+    width:50% ;
+    height: 500px;
+    .form-label{
+        margin: auto;
+        font-size: 18px;
+        color: red;
+    }
+    .form-control{
+        margin: auto;
+        width: 400px;
+        background: black;
+        border-bottom:2px solid $colorUno;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+}*/
+.section-nosotros {
+  margin-left: 10px;
+}
+.section-nosotros h2 {
   font-size: 30px;
   text-align: center;
-  margin: 20px;
 }
-
-p {
+.section-nosotros p {
   font-size: 20px;
   margin: 20px;
 }
-p strong {
+.section-nosotros p strong {
   color: rgb(189, 82, 11);
 }
 
 .formulario-nosotros {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-}
-.formulario-nosotros img {
-  width: 450px;
-  height: 450px;
+  /*margin-left:100px;*/
+  margin: auto;
 }
 .formulario-nosotros form {
-  width: 500px;
-  height: 450px;
+  width: 800px;
+  height: 600px;
+  /*
+      padding-left: 40px;
+      margin: auto;
+      margin-right: 150px;
+      background: black;
+      width: 600px;
+      height: 600px;
+      /*
+  padding-left: 40px;
+  margin: auto;
+  margin-right: 150px;
+  background: black;
+  width: 600px;
+  height: 600px;*/
 }
-.formulario-nosotros form div {
-  margin: 12px;
-  font-size: 20px;
-  padding: 6px;
+.formulario-nosotros form input {
+  width: 600px;
+  /*
+  padding: 20px;
+  width: 400px;
+  background: black;
+  border-bottom:2px solid $colorUno;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+  margin-top: 20px;*/
 }
-.formulario-nosotros form div label {
-  color: rgb(255, 255, 255);
+.formulario-nosotros form textarea {
+  /*
+  width: 300px;
+  background: black;
+  border-bottom:2px solid $colorUno;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;*/
 }
+.formulario-nosotros form label {
+  /*
+  padding: 20px;
+  color: white;*/
+}
+.formulario-nosotros form select {
+  /*
+  background: black;
+  color: $colorUno;
+  border: 1px solid $colorUno;*/
+}
+.formulario-nosotros form button {
+  /*
+  margin-top: 20px;
+  background-color:black;
+  color: $colorUno;
+  border: 1px solid $colorUno;
+  width: 100px;
+  height:40px;*/
+}
+
 .mapa iframe {
   width: 100%;
   height: 300px;
@@ -324,27 +426,102 @@ p strong {
   color: rgb(189, 82, 11);
 }
 
-.formulario-reservas {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/*
+.formulario-reservas{
+    @include formulario(flex,row,center);
+    img{
+        width: 600px;
+        height: 700px;
+    }    
+    form{
+        @extend %form;
+        width:500px ;
+        height:600px ;
+            div{
+                margin:12px;
+                font-size: 20px;
+                padding: 6px;
+                label{
+                    color: $colorTres;
+                }
+                input{
+                    @extend %input;
+                }    
+                select{
+                    @extend %select;
+                }   
+                button{
+                    @extend %button;
+
+
+                }
+            }
+        }
+    }*/
+.section-reservas {
+  margin: 20px;
 }
-.formulario-reservas img {
-  width: 600px;
-  height: 700px;
+.section-reservas h2 {
+  font-size: 30px;
+  text-align: center;
 }
-.formulario-reservas form {
-  width: 500px;
-  height: 600px;
-}
-.formulario-reservas form div {
-  margin: 12px;
+.section-reservas p {
   font-size: 20px;
-  padding: 6px;
+  margin: 20px;
 }
-.formulario-reservas form div label {
-  color: rgb(255, 255, 255);
+.section-reservas p strong {
+  color: rgb(189, 82, 11);
 }
+
+section {
+  margin-left: 500px;
+}
+section form {
+  width: 800px;
+  height: 700px;
+  /*
+  padding-left: 40px;
+  margin: auto;
+  margin-right: 150px;
+  background: black;
+  width: 600px;
+  height: 600px;*/
+}
+section form input {
+  width: 700px;
+}
+section form textarea {
+  /*
+  width: 300px;
+  background: black;
+  border-bottom:2px solid $colorUno;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;*/
+}
+section form label {
+  /*
+  padding: 20px;
+  color: white;*/
+}
+section form select {
+  /*
+  background: black;
+  color: $colorUno;
+  border: 1px solid $colorUno;*/
+}
+section form button {
+  margin-bottom: 20px;
+  /*
+  margin-top: 20px;
+  background-color:black;
+  color: $colorUno;
+  border: 1px solid $colorUno;
+  width: 100px;
+  height:40px;*/
+}
+
 p {
   font-size: 20px;
   margin: 20px;
@@ -361,8 +538,8 @@ p strong {
   nav ul li {
     font-size: 18px;
   }
-  .logo {
-    font-size: 19px;
+  nav ul .logo {
+    font-size: 21px;
   }
   img.d-block {
     height: 300px;
@@ -413,53 +590,69 @@ p strong {
     width: 200px;
     height: 30px;
   }
-  .formulario-nosotros {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .formulario-nosotros img {
-    display: none;
-  }
-  .formulario-nosotros form {
-    width: 100%;
-    height: 390px;
-  }
-  .formulario-nosotros form div {
-    font-size: 18px;
-  }
-  .formulario-nosotros form div input {
-    width: 150px;
-  }
-  .formulario-nosotros form div select {
-    height: 30px;
-  }
-  .formulario-nosotros form div button {
-    width: 100px;
-    height: 40px;
-  }
-  .formulario-reservas {
-    flex-direction: column;
-  }
-  .formulario-reservas img {
-    display: none;
-  }
-  .formulario-reservas form {
-    width: 100%;
-    height: 500px;
-  }
-  .formulario-reservas form div {
-    font-size: 18px;
-  }
-  .formulario-reservas form div input {
-    width: 150px;
-  }
-  .formulario-reservas form div select {
-    height: 30px;
-  }
-  .formulario-reservas form div button {
-    width: 100px;
-    height: 40px;
-  }
+  /*
+  .formulario-nosotros{
+      flex-direction: column;
+      justify-content: center;
+      img{
+          display: none;
+      }
+      form{
+          width: 100%;
+          height:390px ;
+          div{
+              font-size: 18px;
+              input{
+                  @extend %input;
+                  width: 150px;
+              }
+              select{
+                  @extend %select;
+                  height: 30px; 
+
+              }
+              button{
+                  @extend %button;
+                  width: 100px;
+                  height:40px ;
+              }
+              label{
+                  font-size: 15px;
+              }
+          }
+      }
+  }*/
+  /*
+  .formulario-reservas{
+      flex-direction: column;
+      img{
+          display: none;
+      }
+      form{
+          width: 100%;
+          height:500px ;
+          div{
+              font-size: 18px;
+              input{
+                  @extend %input;
+                  width: 150px;
+              }
+              select{
+                  @extend %select;
+                  height: 30px; 
+
+              }
+              button{
+                  @extend %button;
+                  width: 100px;
+                  height:40px ;
+              }
+              label{
+                  font-size: 15px;
+              }
+          }
+      }
+  }*/
   footer {
     height: 250px;
   }
@@ -482,142 +675,157 @@ p strong {
     padding: 3px;
   }
 }
-@media (min-width: 768px) {
-  nav ul {
-    flex-direction: row;
-  }
-  nav ul li {
-    font-size: 22px;
-  }
-  .logo {
-    font-size: 30px;
-  }
-  img.d-block {
-    height: 500px;
-  }
-  h1 {
-    font-size: 22px;
-  }
-  p {
-    font-size: 20px;
-  }
-  h2 {
-    font-size: 21px;
-  }
-  .sugerencias img {
-    width: 200px;
-    height: 200px;
-  }
-  .menu-opciones {
-    flex-direction: row;
-  }
-  .menu-opciones div {
-    margin: 0;
-  }
-  .menu-opciones div img {
-    width: 100%;
-    height: 480px;
-  }
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 280px);
-    justify-content: space-around;
-  }
-  .cards img {
-    width: 280px;
-    height: 240px;
-  }
-  .cards .titulo-tarjeta {
-    font-size: 17px;
-    color: rgb(189, 82, 11);
-  }
-  .cards .card-text {
-    font-size: 14px;
-    margin-left: -10px;
-  }
-  .titulo-decorado {
-    margin: 5px;
-  }
-  .titulo-decorado h2 {
-    font-size: 30px;
-  }
-  .titulo-decorado .linea-decorativa {
-    width: 250px;
-    height: 35px;
-  }
-  h2 {
-    font-size: 21px;
-  }
-  .formulario-nosotros {
-    flex-direction: row;
-  }
-  .formulario-nosotros img {
-    width: 350px;
-    height: 390px;
-  }
-  .formulario-nosotros form {
-    width: 500px;
-    height: 390px;
-  }
-  .formulario-nosotros form div {
-    font-size: 20px;
-  }
-  .formulario-nosotros form div input {
-    width: 150px;
-  }
-  .formulario-nosotros form div select {
-    height: 30px;
-  }
-  .formulario-nosotros form div button {
-    width: 120px;
-    height: 60px;
-  }
-  .formulario-reservas {
+/*
+@media (min-width:$mediaDesktop){
+    //header
+    nav ul{
+        flex-direction: row;
+        li{
+            font-size: 22px;
+        }
+    }
+    .logo{
+        font-size: 30px;
+    }
+    //inicio
+    img.d-block{
+        height: 500px;
+    }
+    h1{
+        font-size:22px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h2{
+        font-size:21px ;
+    }
+    .sugerencias img{
+        width: 200px;
+        height: 200px;
+    }
+    //menu
+    .menu-opciones{
+        flex-direction: row;
+        div{
+            margin:0;
+            img{
+                width:100%;
+                height:480px;
+            }
+        }    
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3,280px);
+        justify-content: space-around;
+
+        img{
+            width:280px;
+            height:240px;
+        }
+        .titulo-tarjeta{
+            font-size: 17px;
+            color:$colorUno;
+        }
+        .card-text{
+            font-size: 14px;
+            margin-left: -10px;
+        }
+    }
+    .titulo-decorado{
+        margin: 5px;
+        h2{
+            font-size: 30px;
+        }
+        .linea-decorativa{
+            width:250px ;
+            height:35px ;
+        }
+    }
+    //nosotros
+    h2{
+        font-size:21px ;
+    }
+    /*boot
+    .formulario-nosotros{
+        flex-direction: row;
+        img{
+            width: 350px;
+            height: 390px;
+        }
+        form{
+            width: 500px;
+            height:390px ;
+            div{
+                font-size: 20px;
+                input{
+                    width: 150px;
+                }
+                select{
+                    height: 30px; 
+                }
+                button{
+                    width: 120px;
+                    height:60px ;
+                }
+                label{
+                    font-size: 15px;
+                }
+            }
+        }
+    }*/
+/*
+.formulario-reservas{
     flex-direction: row;
     justify-content: center;
-  }
-  .formulario-reservas img {
-    width: 450px;
-    height: 600px;
-  }
-  .formulario-reservas form {
-    width: 500px;
-    height: 600px;
-  }
-  .formulario-reservas form div {
-    font-size: 20px;
-  }
-  .formulario-reservas form div input {
-    width: 150px;
-  }
-  .formulario-reservas form div select {
-    height: 30px;
-  }
-  .formulario-reservas form div button {
-    width: 120px;
-    height: 60px;
-  }
-  footer {
-    height: 250px;
-  }
-  footer .footer {
-    grid-template-columns: repeat(3, 220px);
-    gap: 6%;
-  }
-  footer .footer h3 {
-    padding-top: 20px;
-    font-size: 22px;
-  }
-  footer .footer p {
-    font-size: 18px;
-  }
-  footer .footer .iconos-footer-ul {
-    margin-right: 40px;
-  }
-  footer .footer .iconos-footer-ul li {
-    font-size: 18px;
-    padding: 3px;
-  }
-}
+    img{
+        width:450px ;
+        height: 600px;
+    }
+    form{
+        width: 500px;
+        height:600px ;
+        div{
+            font-size: 20px;
+            input{
+                width: 150px;
+            }
+            select{
+                height: 30px; 
+            }
+            button{ 
+                width: 120px;
+                height:60px ;
+            }
+            label{
+                font-size: 15px;
+            }
+        }
+    }
+}*/
+/*
+    footer{
+        height: 250px;
+        .footer{
+            grid-template-columns: repeat(3,220px);
+            gap: 6%;
+            h3{
+                padding-top: 20px;
+                font-size: 22px;
+            }
+            p{
+                font-size: 18px; 
+            }
+            .iconos-footer-ul{
+                margin-right: 40px;
+                li{
+                    font-size: 18px;
+                    padding: 3px;    
+                } 
+            }
+        }    
+    }
+}*/
 
 /*# sourceMappingURL=styles.css.map */

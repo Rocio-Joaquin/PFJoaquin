@@ -1,4 +1,4 @@
-
+/*
 .formulario-reservas{
     @include formulario(flex,row,center);
     img{
@@ -29,7 +29,94 @@
                 }
             }
         }
+    }*/
+    .section-reservas{
+        margin: 20px;
+        h2{
+            font-size:30px;
+            text-align: center;
+        }
+        p{
+            font-size:20px ;
+            margin: 20px;
+            strong{
+                color: $colorUno;
+            }
+        }
     }
+ 
+    section{
+        margin-left: 500px;
+        form{
+            @extend %form;
+            width: 800px;
+            height: 700px;
+            /*
+        padding-left: 40px;
+        margin: auto;
+        margin-right: 150px;
+        background: black;
+        width: 600px;
+        height: 600px;*/
+        input{
+            @extend %input;
+            width: 700px
+            /*
+            padding: 20px;
+            width: 400px;
+            background: black;
+            border-bottom:2px solid $colorUno;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: white;
+            margin-top: 20px;*/
+        }
+        textarea{
+            @extend %textarea;
+            /*
+            width: 300px;
+            background: black;
+            border-bottom:2px solid $colorUno;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: white;*/
+        }
+        label{
+            @extend %label;
+            /*
+            padding: 20px;
+            color: white;*/
+        }
+        select{
+            @extend %select;
+            /*
+            background: black;
+            color: $colorUno;
+            border: 1px solid $colorUno;*/
+        }
+        button{
+            @extend %button;
+            margin-bottom: 20px;
+            /*
+            margin-top: 20px;
+            background-color:black;
+            color: $colorUno;
+            border: 1px solid $colorUno;
+            width: 100px;
+            height:40px;*/
+        }
+    }        
+                    
+    }
+
+
+
+
+
+
+    
     p{
         font-size: 20px;
         margin:20px ;

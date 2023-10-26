@@ -15,82 +15,91 @@
 </head>
 <body>
     <!--inicio de encabezado-->
-    <header>
-            <!--inicio nav-->
-            <nav>
-                <!--inicio div-->
-                <div class="menu-resposive">
-                    <!--inicio de menu-->
-                    <ul class="responsive-ul">
-                            <li class="logo"><a href="../index.html">RESTO-GRILLS</a></li>
-                            <li class="responsive-li"><a href="../index.html">INICIO</a></li>
-                            <li class="responsive-li"><a href="../pages/menu.html">MENU</a></li>
-                            <li class="responsive-li"><a href="../pages/reservas.html">RESERVAS</a></li>
-                            <li class="responsive-li"><a href="../pages/nosotros.html">NOSOTROS</a></li>
-                            <li class="responsive-li"><a href="../pages/locations.html">LOCATIONS</a></li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">RESTO-GRILLS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barra-navegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="barra-navegacion">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+              </li>
+            </ul>
+              <div class="collapse navbar-collapse" id="barra-navegacion">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/menu.html">MENU</a>
+                  </li>
+                </ul>
+                  <div class="collapse navbar-collapse" id="barra-navegacion">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/reservas.html">RESERVAS</a>
+                      </li>
                     </ul>
-                    <!--fin de menu-->
-                </div>
-                <!--fin de div-->
-            </nav>
-            <!--fin de nav-->
-    </header>
-    <!--fin de encabezado-->
+                      <div class="collapse navbar-collapse" id="barra-navegacion">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">NOSOTROS</a>
+                          </li>
+                        </ul>
+                          <div class="collapse navbar-collapse" id="barra-navegacion">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/locations.html">LOCALES</a>
+                              </li>
+                            </ul>
+          </div>
+        </div>
+      </nav>
      
     <!--inicio de main-->
     <main>
             <!--inicio de section-->
-            <section> 
+            <section class="section-nosotros"> 
                     <h2>¿QUERES TRABAJAR CON NOSOTROS?</h2>
                     <p>En <strong>RESTO-GRILLS</strong> queremos que formes parte de nuestro equipo, contamos con mas de 100 puestos de trabajo, y este puede ser el tuyo.
                     Elegimos un personal especializado en la cocina con ganas de crecer y aprender.
                     Contanos acerca de vos y dejanos tu CV!</p>
-                    <br><br>  
+                      
             </section>
             <!--fin de section--> 
-
+       
             <!--inicio de section-->
-            <section> 
-                <!--inicio de div-->
+            <section>
                 <div class="formulario-nosotros">
-                        <div class="img-nosotros">
-                             <img src="../img/avocado-toast.jpg">
+                    <form>
+                        <div>
+                            <input type="name" class="input" placeholder="NOMBRE">
                         </div>
-                        <!--inicio de formulario-->
-                        <form method="post">
-                            
-                                <div>
-                                    <label for="nombre">NOMBRE</label>
-                                    <input type="text" name="name">
-                                </div>
-                                <div>
-                                    <label for="apellido">APELLIDO</label>
-                                    <input type="text"  name="lastname">
-                                </div>    
-                                <div>
-                                    <label for="email">EMAIL</label>
-                                    <input type="email"  name="email">
-                                </div>
-                                <div>
-                                    <label>EXPERIENCIA LABORAL</label>
-                                    <select name="selecciona">
-                                    <option>AYUDANTE DE COCINA</option>
-                                    <option>COCINERO/A</option>
-                                    <option>DIRIGENTE DE COCINA</option>
-                                    <option>CAMARERO/A</option>
-                                    <option>otro</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <button>ENVIAR</button>
-                                </div>
-                            
-                        </form>
-                        <!--fin del formulario-->
-                   </div>
-                   <!--fin de div-->
-                </section>
-                <!--fin de section-->
+                        <div>
+                            <input type="name" class="input" placeholder="APELLIDO">
+                        </div>
+                        <div>
+                            <input type="name" class="input" placeholder="EMAIL">
+                        </div>
+                        <div>
+                            <label>EXPERIENCIA LABORAL</label>
+                            <select name="selecciona">
+                            <option>AYUDANTE DE COCINA</option>
+                            <option>COCINERO/A</option>
+                            <option>DIRIGENTE DE COCINA</option>
+                            <option>CAMARERO/A</option>
+                            <option>OTRO</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea rows="5"></textarea>
+                        </div>
+                        <div>
+                            <button>ENVIAR</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!--fin de section-->
     </main>
     <!--fin de main-->
 
