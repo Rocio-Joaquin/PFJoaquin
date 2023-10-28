@@ -3,9 +3,12 @@ $colorUno:rgb(189 , 82 ,11);
 $colorDos:black;
 $colorTres:rgb(255, 255, 255);
 $colorCuatro:rgb(75 75 75 / 35%);
-//MEDIAS-QUERIS
-$mediaMobile:768px;
-$mediaDesktop:768px;
+//MEDIAS-QUERIES
+/*$mediaMobile:768px;
+$mediaDesktop:768px;*/
+$mediaMobile:500px;
+$mediaDesktop:500px;
+
 //MIXINS
 @mixin flex ($display,$flex-direction,$just,$a-content,$a-items){
     display: $display;
@@ -21,60 +24,31 @@ $mediaDesktop:768px;
 }
 //EXTEND
 %form{
-padding-left: 30px;
-padding-top: 20px;
-padding-bottom: 30px;
-background:$colorDos;
-padding-left: 40px;
-
-margin-right: 150px;
-background: black;
-/*width: 600px;
-height: 600px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $colorDos;
 }
 
 %input{
-
-    /*
-    height: 35px;
-    border-bottom: 2px solid $colorUno;
-    background: $colorCuatro;
-    border-right: unset;
-    border-top: unset;
-    border-left: unset;
-    color: $colorDos;*/
     padding: 20px;
-    /*width: 600px;*/
-    background: black;
+    background:$colorDos;
     border-bottom:2px solid $colorUno;
     border-top: none;
     border-left: none;
     border-right: none;
-    color: white;
+    color:$colorTres;
     margin-top: 20px;
 }
 %select{
-    /*
-    height: 35px;
-    border-bottom: 2px solid $colorUno;
-    background: $colorCuatro;
-    border-right: unset;
-    border-top: unset;
-    border-left: unset;
-    color: $colorDos;*/
-        background: black;
-        color: $colorUno;
-        border: 1px solid $colorUno;
+    background:$colorDos;
+    color: $colorUno;
+    border: 1px solid $colorUno;
     
 }
 %button{
-    /*
-    background-color:$colorUno;
-    border: none;
-    margin-left: 40%;
-    border-radius: 22px;*/
     margin-top: 30px;
-    background-color:black;
+    background-color:$colorDos;
     color: $colorUno;
     border: 1px solid $colorUno;
     width: 100px;
@@ -82,7 +56,7 @@ height: 600px;*/
 }
 %textarea{
     width: 300px;
-    background: black;
+    background:$colorDos;
     border-bottom:2px solid $colorUno;
     border-top: none;
     border-left: none;

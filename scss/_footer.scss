@@ -1,24 +1,42 @@
 
 footer{
     background:$colorDos;
-    height: 250px;
-    margin-top: 30px;
+    height: 380px;
+    margin-top:80px;
+    img{
+        @include formulario(flex,column,center);
+        margin: auto;
+        width: 120px;
+        height: 120px;
+    }
+    .iconos-footer-ul{
+        @include formulario (flex,row,center);
+        margin-right: 30px;
+        li{
+            font-size: 25px;
+            padding: 5px;
+            i{
+                color:$colorUno; 
+                }
+            }
+        }
     .footer{
         display: grid;
-        grid-template-columns: repeat(3,250px);
-        gap:10% ;
-        justify-content: center; 
+        grid-template-columns: repeat(3,300px);
+        gap:5%;
+        justify-content: center;
         h3{
+            text-align: center;
             padding-top: 50px;
-            font-size: 30px;
+            font-size: 20px;
             color:$colorUno;
             font-family: 'Anton', sans-serif;
         }    
         p{
-            font-size: 20px;  
-            margin: -1px;        
+            text-align: center;
+            font-size: 15px;  
+             
             color:$colorTres;
-           
         }    
         .iconos-footer-ul{
             @include formulario (flex,row,space-around);

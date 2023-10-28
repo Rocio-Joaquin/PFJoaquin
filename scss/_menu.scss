@@ -1,13 +1,35 @@
 
 .menu-opciones{
     display: flex;
+    justify-content: flex-end;
     div{
         @include formulario (flex, column, center);
-        margin-top:40px;
-        margin-bottom: 100px;
         border: none;
+        .button{
+            @extend %button;
+            /*
+            margin-left: 100px;
+            background: black;
+            border: 2px solid $colorUno;
+            width: 150px;
+            height:50px;
+            padding: 10px;
+            border-radius:8px;
+            letter-spacing:1px;
+            &:hover{
+                background: $colorUno;
+                border: 2px solid black;
+            }
+            a{
+                color:$colorUno;
+                &:hover{
+                    color: $colorDos;
+                }
+            }*/
+        }
+
         img{
-            width:380px;
+            width:350px;
             height:480px;
         }
         a{
@@ -15,14 +37,31 @@
             color: $colorUno;
         } 
     }    
-}             
+}  
+/*
+.card-opciones{
+    display: flex;
+    justify-content:center;
+    flex-direction:row;
+    .card{
+        @include formulario (flex, row, center);
+        border: none;
+        img{
+            width:400px;
+            height:500px;
+        }
+    }
+}*/
+
+
+/*
 .cards{
     display: grid;
     grid-template-columns: repeat(3,300px);
     justify-content: space-around;
     img{
-        width:320px;
-        height:300px;
+        width:280px;
+        height:233px;
     }
     .titulo-tarjeta{
         font-size: 25px;
@@ -48,4 +87,41 @@
         margin-bottom: 80px;
     }
 }    
+*/
+.fondo-card{
+    background:#1a1a1a;
+    background-image: url(../img/desayuno.jpg);
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 100px;
+
+.card{
+    margin-top: 100px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    .card-img-top{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+}
+}
+.titulo{
+    background: #1a1a1a;
+    color:$colorUno;
+    margin-bottom: -100px;
+    margin-top: 200px;
+    h2{
+        font-family:'Raleway', sans-serif;
+        font-size:30px ;
+        letter-spacing: 10px;
+    }
+}
+
+
 

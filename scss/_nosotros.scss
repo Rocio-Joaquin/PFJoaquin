@@ -1,151 +1,28 @@
-/*h2{
-    font-size:30px;
-    text-align: center;
-    margin: 20px;
-}
-p{
-    font-size:20px ;
-    margin: 20px;
-    strong{
-        color: $colorUno;
-    }
-}*/
-/*
-.formulario-nosotros{
-    @include formulario(flex, row, center);
-    img{
-        width: 450px;
-        height: 450px;
-    }    
-    form{
-        @extend %form;
-        width: 500px;
-        height: 450px;
-            div{
-                margin:12px;
-                font-size: 20px;
-                padding: 6px;
-                label{
-                    color:$colorTres;
-                }
-                input{
-                    @extend %input;
-                }    
-                select{
-                    @extend %select;
-                }   
-                button{
-                    @extend %button;
-                }
-            }
-        }
-    }
-*/
-/*form{
-    margin: auto;
-    background: black;
-    width:50% ;
-    height: 500px;
-    .form-label{
-        margin: auto;
-        font-size: 18px;
-        color: red;
-    }
-    .form-control{
-        margin: auto;
-        width: 400px;
-        background: black;
-        border-bottom:2px solid $colorUno;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-    }
-}*/
-.section-nosotros{
-    margin-left: 10px;
-    h2{
-        font-size:30px;
-        text-align: center;
-    }
-    p{
-        font-size:20px ;
-        margin: 20px;
-        strong{
-            color: $colorUno;
-        }
-    }
-}
+
 .formulario-nosotros{ 
-    display: flex;
-    justify-content: center;
-    /*margin-left:100px;*/
+    @extend %form;
+    width:800px;
+    height:600px;
     margin: auto;
-    form{
-        @extend %form;
-        width: 800px;
-        height: 600px;
-        /*
-        padding-left: 40px;
-        margin: auto;
-        margin-right: 150px;
-        background: black;
-        width: 600px;
-        height: 600px;
-        /*
-    padding-left: 40px;
-    margin: auto;
-    margin-right: 150px;
-    background: black;
-    width: 600px;
-    height: 600px;*/
     input{
         @extend %input;
-        width: 600px;
-        /*
-        padding: 20px;
-        width: 400px;
-        background: black;
-        border-bottom:2px solid $colorUno;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        color: white;
-        margin-top: 20px;*/
+        width: 700px;
+        margin-left: 40px;
     }
     textarea{
         @extend %textarea;
-        /*
-        width: 300px;
-        background: black;
-        border-bottom:2px solid $colorUno;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        color: white;*/
+        margin-left: 40px;
     }
     label{
         @extend %label;
-        /*
-        padding: 20px;
-        color: white;*/
+        margin-left: 40px
     }
     select{
         @extend %select;
-        /*
-        background: black;
-        color: $colorUno;
-        border: 1px solid $colorUno;*/
     }
     button{
         @extend %button;
-        /*
-        margin-top: 20px;
-        background-color:black;
-        color: $colorUno;
-        border: 1px solid $colorUno;
-        width: 100px;
-        height:40px;*/
+        margin-left: 40px;
     }
 }        
                 
-}
