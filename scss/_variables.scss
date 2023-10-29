@@ -6,8 +6,10 @@ $colorCuatro:rgb(75 75 75 / 35%);
 //MEDIAS-QUERIES
 /*$mediaMobile:768px;
 $mediaDesktop:768px;*/
-$mediaMobile:500px;
-$mediaDesktop:500px;
+$mediaMobile:480px;
+$mediaTablet:481px;
+$mediaTablet2:991px;
+$mediaDesktop:992px;
 
 //MIXINS
 @mixin flex ($display,$flex-direction,$just,$a-content,$a-items){

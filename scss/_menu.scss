@@ -7,25 +7,6 @@
         border: none;
         .button{
             @extend %button;
-            /*
-            margin-left: 100px;
-            background: black;
-            border: 2px solid $colorUno;
-            width: 150px;
-            height:50px;
-            padding: 10px;
-            border-radius:8px;
-            letter-spacing:1px;
-            &:hover{
-                background: $colorUno;
-                border: 2px solid black;
-            }
-            a{
-                color:$colorUno;
-                &:hover{
-                    color: $colorDos;
-                }
-            }*/
         }
 
         img{
@@ -96,20 +77,33 @@
     flex-direction: row;
     justify-content:space-around;
     margin-top: 100px;
+    .card{
+        margin-top: 100px;
+        height: 500px;
+        background: rgb(255, 255, 255);
+        .card-img-top{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .card-body{
+            h3{
+                font-size: 25px;
+                color: $colorUno;
+                text-align: center;
+                font-family:'Raleway', sans-serif;
+            }
+            p{
+                text-align: center;
+                font-family:'Raleway', sans-serif ;
+                font-size: 18px;
+            }
 
-.card{
-    margin-top: 100px;
-    height: 500px;
-    background: rgb(255, 255, 255);
-    .card-img-top{
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        margin: auto;
-        margin-top: 20px;
+        }
     }
-
-}
+ 
 }
 .titulo{
     background: #1a1a1a;
