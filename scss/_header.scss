@@ -13,13 +13,10 @@
         .nav-link.active{
             color: $colorUno;
             font-size: 22px;
-            margin: 8px;   
-        }
-    } 
+            margin: 8px; 
+            &:hover{
+                color: $colorTres;
+            }
+        } 
+    }
 }
-
-
-
-
-    
-

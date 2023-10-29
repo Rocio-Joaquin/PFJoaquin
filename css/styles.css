@@ -64,6 +64,9 @@ $mediaDesktop:768px;*/
   font-size: 22px;
   margin: 8px;
 }
+.container-fluid .navbar-nav .nav-link.active:hover {
+  color: rgb(255, 255, 255);
+}
 
 footer {
   background: black;
@@ -308,6 +311,9 @@ h2 strong {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
 }
+.fondo-card .card .card-body p strong {
+  color: rgb(189, 82, 11);
+}
 
 .titulo {
   background: #1a1a1a;
@@ -338,8 +344,23 @@ h2 strong {
 }
 .formulario-nosotros button {
   margin-left: 40px;
+  animation: animacionboton 2s infinite;
 }
 
+@keyframes animacionboton {
+  0% {
+    transform: scale(1.05) rotate(6deg);
+  }
+  20% {
+    transform: scale(1.05) rotate(-7deg);
+  }
+  30% {
+    transform: scale(1.05) rotate(6deg);
+  }
+  40% {
+    transform: none;
+  }
+}
 .mapa iframe {
   width: 100%;
   height: 300px;
@@ -380,6 +401,7 @@ p strong {
 .formulario-reservas button {
   margin-bottom: 20px;
   margin-left: 40px;
+  animation: animacionboton 2s infinite;
 }
 
 @media (max-width: 480px) {
