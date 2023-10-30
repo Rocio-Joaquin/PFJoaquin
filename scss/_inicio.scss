@@ -24,8 +24,7 @@ h2{
     }
 }
 .sugerencias{
-    display: flex;
-    justify-content: center;
+    @include formulario (flex,row,center);
     align-items: center;
     flex-wrap: wrap;
     img{

@@ -12,6 +12,7 @@
     textarea{
         @extend %textarea;
         margin-left: 40px;
+        width: 700px;
     }
     label{
         @extend %label;
@@ -26,6 +27,7 @@
         animation: animacionboton 2s infinite;     
     }   
 } 
+//Animacion para boton de formularios
 @keyframes animacionboton{
     0%{
         transform: scale(1.05) rotate(6deg);

@@ -67,6 +67,9 @@ $mediaDesktop:768px;*/
 .container-fluid .navbar-nav .nav-link.active:hover {
   color: rgb(255, 255, 255);
 }
+.container-fluid button {
+  background: rgb(189, 82, 11);
+}
 
 footer {
   background: black;
@@ -202,6 +205,7 @@ h2 strong {
 
 .sugerencias {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -214,7 +218,6 @@ h2 strong {
 
 .menu-opciones {
   display: flex;
-  justify-content: flex-end;
 }
 .menu-opciones div {
   display: flex;
@@ -231,54 +234,6 @@ h2 strong {
   color: rgb(189, 82, 11);
 }
 
-/*
-.card-opciones{
-    display: flex;
-    justify-content:center;
-    flex-direction:row;
-    .card{
-        @include formulario (flex, row, center);
-        border: none;
-        img{
-            width:400px;
-            height:500px;
-        }
-    }
-}*/
-/*
-.cards{
-    display: grid;
-    grid-template-columns: repeat(3,300px);
-    justify-content: space-around;
-    img{
-        width:280px;
-        height:233px;
-    }
-    .titulo-tarjeta{
-        font-size: 25px;
-        color:$colorUno;
-    }
-    .card-text{
-        font-size: 18px;
-        margin-left: -10px;
-    }
-}
-.titulo-decorado{
-    margin: 10px;
-    h2{
-        font-size: 30px;
-        margin-bottom: -20px;
-    }
-    .linea-decorativa{
-        background-image: url(https://popmenucloud.com/ckfbqnia/cdaa464b-da11-4c5f-b275-15cdfffbd18e.png);
-        width: 280px;
-        height: 40px;
-        background-size: cover;
-        margin: auto;
-        margin-bottom: 80px;
-    }
-}    
-*/
 .fondo-card {
   background: #1a1a1a;
   background-image: url(../img/desayuno.jpg);
@@ -338,6 +293,7 @@ h2 strong {
 }
 .formulario-nosotros textarea {
   margin-left: 40px;
+  width: 700px;
 }
 .formulario-nosotros label {
   margin-left: 40px;
@@ -363,7 +319,7 @@ h2 strong {
 }
 .mapa iframe {
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 h2 {
@@ -407,20 +363,20 @@ p strong {
 @media (max-width: 480px) {
   .container-fluid {
     flex-direction: row;
-    justify-content: center;
-    background-color: black;
+    /*justify-content: center;*/
+    /*background-color:black;*/
   }
   .nav-item a {
     text-align: center;
   }
   img.d-block {
-    width: 100%;
-    height: 420px;
+    /*width: 100%;*/
+    height: 400px;
   }
   .sugerencias img {
-    margin: 2px;
-    width: 150px;
-    height: 150px;
+    margin: 1px;
+    width: 120px;
+    height: 120px;
   }
   .menu-opciones {
     flex-direction: column;
@@ -431,9 +387,9 @@ p strong {
   }
   .fondo-card {
     height: 65%;
-    flex-direction: row;
+    /*flex-direction:row;*/
     flex-wrap: wrap;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     width: 100%;
     padding-bottom: 100px;
   }
@@ -443,7 +399,7 @@ p strong {
   .formulario-reservas {
     width: 400px;
     height: 700px;
-    margin: auto;
+    /*margin: auto;*/
   }
   .formulario-reservas input {
     width: 300px;
@@ -457,16 +413,18 @@ p strong {
     margin-bottom: 20px;
   }
   .formulario-nosotros {
-    width: 400px;
+    width: 350px;
     height: 600px;
-    margin: auto;
+    /*margin: auto;*/
   }
   .formulario-nosotros input {
-    width: 300px;
+    width: 250px;
     height: 40px;
+    padding: 12px;
+    margin-top: 12px;
   }
   .formulario-nosotros textarea {
-    width: 300px;
+    width: 250px;
   }
   .formulario-nosotros select {
     margin-left: 50px;
@@ -495,17 +453,17 @@ p strong {
     font-size: 12px;
   }
 }
-@media (min-width: 481px) and (max-width: 991px) {
+@media (min-width: 481px) and (max-width: 780px) {
   .container-fluid {
     flex-direction: row;
-    justify-content: center;
-    background-color: black;
+    /*justify-content: center;*/
+    /*background-color:black;*/
   }
   .container-fluid .nav-item a {
     text-align: center;
   }
   img.d-block {
-    width: 100%;
+    /*width: 100%;*/
     height: 500px;
   }
   .sugerencias img {
@@ -520,14 +478,14 @@ p strong {
   }
   .menu-opciones div img {
     width: 100%;
-    height: 400px;
+    height: 550px;
   }
   .fondo-card {
     height: 65%;
-    flex-direction: row;
-    justify-content: space-around;
+    /*flex-direction:row;
+    justify-content: space-around;*/
     flex-wrap: wrap;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     width: 100%;
     padding-bottom: 100px;
   }
@@ -535,9 +493,9 @@ p strong {
     height: 500px;
   }
   .formulario-reservas {
-    width: 450px;
-    height: 650px;
-    margin: auto;
+    width: 400px;
+    height: 700px;
+    /*margin: auto;*/
   }
   .formulario-reservas input {
     width: 300px;
@@ -551,13 +509,15 @@ p strong {
     margin-bottom: 20px;
   }
   .formulario-nosotros {
-    width: 450px;
-    height: 650px;
-    margin: auto;
+    width: 400px;
+    height: 600px;
+    /*margin: auto;*/
   }
   .formulario-nosotros input {
     width: 300px;
     height: 40px;
+    padding: 12px;
+    margin-top: 12px;
   }
   .formulario-nosotros textarea {
     width: 300px;
@@ -589,7 +549,92 @@ p strong {
     font-size: 12px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 781px) and (max-width: 980px) {
+  .container-fluid {
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+  }
+  .container-fluid .nav-item a {
+    text-align: center;
+  }
+  .menu-opciones {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .menu-opciones div img {
+    width: 220px;
+    height: 350px;
+  }
+  .fondo-card {
+    height: 65%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .fondo-card .card {
+    height: 500px;
+  }
+  .formulario-reservas {
+    width: 550px;
+    height: 650px;
+    margin: auto;
+  }
+  .formulario-reservas input {
+    width: 450px;
+    height: 40px;
+  }
+  .formulario-reservas textarea {
+    width: 450px;
+  }
+  .formulario-reservas select {
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  .formulario-nosotros {
+    width: 550px;
+    height: 650px;
+    margin: auto;
+  }
+  .formulario-nosotros input {
+    width: 450px;
+    height: 40px;
+  }
+  .formulario-nosotros textarea {
+    width: 450px;
+  }
+  .formulario-nosotros select {
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  footer {
+    height: 400px;
+  }
+  footer img {
+    width: 120px;
+    height: 120px;
+  }
+  footer .iconos-footer-ul li {
+    font-size: 20px;
+  }
+  footer .footer {
+    grid-template-columns: repeat(3, 170px);
+    gap: 2%;
+  }
+  footer .footer h3 {
+    padding-top: 50px;
+    font-size: 16px;
+    color: rgb(189, 82, 11);
+  }
+  footer .footer p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 981px) {
   .container-fluid {
     flex-direction: column;
     justify-content: center;
@@ -604,7 +649,7 @@ p strong {
     justify-content: center;
   }
   .menu-opciones div img {
-    width: 250px;
+    width: 300px;
     height: 350px;
   }
   .fondo-card {
@@ -620,5 +665,41 @@ p strong {
     height: 500px;
   }
 }
+/*
+    .formulario-reservas{
+        width:550px;
+        height:650px ;
+        margin: auto;
+        input{
+            width: 450px;
+            height: 40px;
+        }
+        textarea{
+            width: 450px;
+        }
+        select{
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+    }
+    //NOSOTROS
+    .formulario-nosotros{
+        width:550px;
+        height:650px ;
+        margin: auto;
+        input{
+            width: 450px;
+            height: 40px;
+        }
+        textarea{
+            width: 450px;
+        }
+        select{
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+    }
+
+*/
 
 /*# sourceMappingURL=styles.css.map */

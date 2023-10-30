@@ -3,8 +3,8 @@
     //HEADER
     .container-fluid{
         flex-direction: row;
-        justify-content: center;
-        background-color:black;
+        /*justify-content: center;*/
+        /*background-color:black;*/
     }
     .nav-item{
         a{
@@ -13,14 +13,14 @@
     }
     //INICIO
     img.d-block{
-        width: 100%;
-        height: 420px;
+        /*width: 100%;*/
+        height: 400px;
     } 
     .sugerencias{
         img{
-            margin: 2px;
-            width: 150px;
-            height: 150px;
+            margin: 1px;
+            width: 120px;
+            height: 120px;
         }
     } 
     //MENU
@@ -35,9 +35,9 @@
     }
     .fondo-card{
         height: 65%;
-        flex-direction:row;
+        /*flex-direction:row;*/
         flex-wrap: wrap;
-        margin-top: 100px;
+        /*margin-top: 100px;*/
         width: 100%;
         padding-bottom: 100px;
         .card{
@@ -48,7 +48,7 @@
     .formulario-reservas{
         width:400px;
         height:700px ;
-        margin: auto;
+        /*margin: auto;*/
         input{
             width: 300px;
             height: 40px;
@@ -63,15 +63,17 @@
     }
     //NOSOTROS
     .formulario-nosotros{
-        width:400px;
+        width:350px;
         height:600px ;
-        margin: auto;
+        /*margin: auto;*/
         input{
-            width: 300px;
+            width: 250px;
             height: 40px;
+            padding: 12px;
+            margin-top: 12px;
         }
         textarea{
-            width: 300px;
+            width: 250px;
         }
         select{
             margin-left: 50px;
@@ -89,7 +91,6 @@
             li{
                 font-size: 20px;
             }
-
         }
         .footer{
             grid-template-columns: repeat(3,145px);
@@ -107,12 +108,12 @@
     }
 }
 
-@media (min-width:$mediaTablet)and (max-width:$mediaTablet2){
+@media (min-width:$mediaTablet)and (max-width:780px){
     //HEADER
     .container-fluid{
         flex-direction: row;
-        justify-content: center;
-        background-color:black;
+        /*justify-content: center;*/
+        /*background-color:black;*/
         .nav-item{
             a{
                 text-align: center;
@@ -121,7 +122,7 @@
     }
     //INICIO
     img.d-block{
-        width: 100%;
+        /*width: 100%;*/
         height: 500px;
     }
     .sugerencias{
@@ -133,22 +134,22 @@
     } 
     //MENU
     .menu-opciones{
-        flex-direction:column;//row
+        flex-direction:column;
         flex-wrap: wrap;
         justify-content: center;
         div{
             img{
                 width:100%;
-                height:400px ;
+                height:550px;
             }
         }
     }
     .fondo-card{
         height: 65%;
-        flex-direction:row;//row
-        justify-content: space-around;
+        /*flex-direction:row;
+        justify-content: space-around;*/
         flex-wrap:wrap;
-        margin-top: 100px;
+        /*margin-top: 100px;*/
         width: 100%;
         padding-bottom: 100px;
         .card{
@@ -157,9 +158,9 @@
     } 
     //RESERVAS
     .formulario-reservas{
-        width:450px;
-        height:650px ;
-        margin: auto;
+        width:400px;
+        height:700px ;
+        /*margin: auto;*/
         input{
             width: 300px;
             height: 40px;
@@ -174,15 +175,114 @@
     }
     //NOSOTROS
     .formulario-nosotros{
-        width:450px;
-        height:650px ;
-        margin: auto;
+        width:400px;
+        height:600px ;
+        /*margin: auto;*/
         input{
             width: 300px;
             height: 40px;
+            padding: 12px;
+            margin-top: 12px;
         }
         textarea{
             width: 300px;
+        }
+        select{
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+    }
+    //FOOTER
+    footer{
+        height:400px;
+        img{
+            width: 120px;
+            height: 120px;
+        }
+        .iconos-footer-ul{
+            li{
+                font-size: 20px;
+            }
+        }
+        .footer{
+            grid-template-columns: repeat(3,170px);
+            gap: 2%;
+            h3{
+                padding-top: 50px;
+                font-size: 16px;
+                color:$colorUno;
+            } 
+            p{
+                font-size: 12px;  
+            }
+
+        }
+    }
+}
+@media (min-width:781px) and (max-width:980px){
+    //INICIO
+    .container-fluid{
+        flex-direction: row;//column
+        justify-content: center;
+        background-color:black;
+        .nav-item{
+            a{
+                text-align: center;
+            }
+        }
+    }
+    //MENU
+    .menu-opciones{
+        flex-direction:row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        div{
+            img{
+                width:220px;
+                height:350px ;
+            }
+        }
+    }
+    .fondo-card{
+        height: 65%;
+        flex-direction:row;
+        justify-content: space-around;
+        flex-wrap:wrap;
+        margin-top: 100px;
+        width: 100%;
+        padding-bottom: 100px;
+        .card{
+            height: 500px;
+        }
+    } 
+    //RESERVAS
+    .formulario-reservas{
+        width:550px;
+        height:650px ;
+        margin: auto;
+        input{
+            width: 450px;
+            height: 40px;
+        }
+        textarea{
+            width: 450px;
+        }
+        select{
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+    }
+    //NOSOTROS
+    .formulario-nosotros{
+        width:550px;
+        height:650px ;
+        margin: auto;
+        input{
+            width: 450px;
+            height: 40px;
+        }
+        textarea{
+            width: 450px;
         }
         select{
             margin-left: 50px;
@@ -218,7 +318,13 @@
     }
 }
 
-@media (min-width:$mediaDesktop) {
+
+
+
+
+
+
+@media (min-width:981px) {
         //HEADER
         .container-fluid{
             flex-direction: column;
@@ -232,19 +338,19 @@
         }
         //MENU
         .menu-opciones{
-            flex-direction:row;//row
+            flex-direction:row;
             flex-wrap: nowrap;
             justify-content: center;
             div{
                 img{
-                    width:250px;
+                    width:300px;
                     height:350px ;
                 }
             }
         }
         .fondo-card{
             height: 65%;
-            flex-direction:row;//row
+            flex-direction:row;
             justify-content: space-around;
             flex-wrap:wrap;
             margin-top: 100px;
@@ -254,12 +360,41 @@
                 height: 500px;
             }
     }
-    
-
-
-    
 }
+    //RESERVAS
+    /*
+    .formulario-reservas{
+        width:550px;
+        height:650px ;
+        margin: auto;
+        input{
+            width: 450px;
+            height: 40px;
+        }
+        textarea{
+            width: 450px;
+        }
+        select{
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+    }
+    //NOSOTROS
+    .formulario-nosotros{
+        width:550px;
+        height:650px ;
+        margin: auto;
+        input{
+            width: 450px;
+            height: 40px;
+        }
+        textarea{
+            width: 450px;
+        }
+        select{
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+    }
 
-
-
-  
+*/

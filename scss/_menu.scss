@@ -1,14 +1,12 @@
 
 .menu-opciones{
     display: flex;
-    justify-content: flex-end;
     div{
         @include formulario (flex, column, center);
         border: none;
         .button{
             @extend %button;
         }
-
         img{
             width:350px;
             height:480px;
@@ -19,68 +17,16 @@
         } 
     }    
 }  
-/*
-.card-opciones{
-    display: flex;
-    justify-content:center;
-    flex-direction:row;
-    .card{
-        @include formulario (flex, row, center);
-        border: none;
-        img{
-            width:400px;
-            height:500px;
-        }
-    }
-}*/
-
-
-/*
-.cards{
-    display: grid;
-    grid-template-columns: repeat(3,300px);
-    justify-content: space-around;
-    img{
-        width:280px;
-        height:233px;
-    }
-    .titulo-tarjeta{
-        font-size: 25px;
-        color:$colorUno;
-    }
-    .card-text{
-        font-size: 18px;
-        margin-left: -10px;
-    }
-}
-.titulo-decorado{
-    margin: 10px;
-    h2{
-        font-size: 30px;
-        margin-bottom: -20px;
-    }
-    .linea-decorativa{
-        background-image: url(https://popmenucloud.com/ckfbqnia/cdaa464b-da11-4c5f-b275-15cdfffbd18e.png);
-        width: 280px;
-        height: 40px;
-        background-size: cover;
-        margin: auto;
-        margin-bottom: 80px;
-    }
-}    
-*/
 .fondo-card{
-    background:#1a1a1a;
+    background:$colorCinco;
     background-image: url(../img/desayuno.jpg);
     height: 700px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+    @include formulario (flex,row, space-around);
     margin-top: 100px;
     .card{
         margin-top: 100px;
         height: 500px;
-        background: rgb(255, 255, 255);
+        background:$colorTres;
         .card-img-top{
             width: 200px;
             height: 200px;
@@ -93,29 +39,26 @@
                 font-size: 25px;
                 color: $colorUno;
                 text-align: center;
-                font-family:'Raleway', sans-serif;
+                font-family:$raleway;
             }
             p{
                 text-align: center;
-                font-family:'Raleway', sans-serif ;
+                font-family:$raleway ;
                 font-size: 18px;
                 strong{
                     color: $colorUno;
                 }
             }
-
-
         }
     }
- 
 }
 .titulo{
-    background: #1a1a1a;
+    background:$colorCinco;
     color:$colorUno;
     margin-bottom: -100px;
     margin-top: 200px;
     h2{
-        font-family:'Raleway', sans-serif;
+        font-family:$raleway;
         font-size:30px ;
         letter-spacing: 10px;
     }
