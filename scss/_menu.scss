@@ -1,22 +1,4 @@
 
-.menu-opciones{
-    display: flex;
-    div{
-        @include formulario (flex, column, center);
-        border: none;
-        .button{
-            @extend %button;
-        }
-        img{
-            width:350px;
-            height:480px;
-        }
-        a{
-            text-decoration: none;
-            color: $colorUno;
-        } 
-    }    
-}  
 .fondo-card{
     background:$colorCinco;
     background-image: url(../img/desayuno.jpg);
@@ -66,12 +48,15 @@
 
 .carta{
     background-image: url(../img/desayuno.jpg);
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 300px;
+    height: 400px;
     h2{
         text-align: center;
         font-size: 30px;
         padding: 130px;
+        letter-spacing: 20px;
+        color: $colorTres;
     }
 }
