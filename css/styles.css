@@ -282,6 +282,18 @@ h2 strong {
   letter-spacing: 10px;
 }
 
+.carta {
+  background-image: url(../img/desayuno.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+.carta h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 130px;
+}
+
 .formulario-nosotros {
   width: 800px;
   height: 600px;
@@ -317,11 +329,6 @@ h2 strong {
     transform: none;
   }
 }
-.mapa iframe {
-  width: 100%;
-  height: 400px;
-}
-
 h2 {
   font-size: 30px;
   text-align: center;
@@ -334,6 +341,47 @@ p {
 }
 p strong {
   color: rgb(189, 82, 11);
+}
+
+.ubicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 400px;
+}
+.ubicacion .card {
+  height: 150px;
+}
+.ubicacion .card img {
+  height: 250px;
+}
+.ubicacion .card-body {
+  border: 1px solid rgba(0, 0, 0, 0.349);
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+.ubicacion .card-body h5 {
+  text-align: center;
+  color: rgb(189, 82, 11);
+  font-family: "Raleway", sans-serif;
+}
+.ubicacion .card-body p {
+  font-size: 20px;
+  text-align: center;
+}
+.ubicacion .card-body .btn {
+  margin: auto;
+  background: white;
+  border: 1px solid rgb(189, 82, 11);
+  display: flex;
+  color: rgb(189, 82, 11);
+  justify-content: center;
+  width: 150px;
+}
+.ubicacion .card-body .btn:hover {
+  background: rgb(189, 82, 11);
+  color: white;
 }
 
 .formulario-reservas {
@@ -429,6 +477,14 @@ p strong {
   .formulario-nosotros select {
     margin-left: 50px;
     margin-bottom: 20px;
+  }
+  .ubicacion {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .ubicacion .card {
+    margin-bottom: 400px;
   }
   footer {
     height: 400px;
@@ -526,6 +582,14 @@ p strong {
     margin-left: 50px;
     margin-bottom: 20px;
   }
+  .ubicacion {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .ubicacion .card {
+    margin-bottom: 400px;
+  }
   footer {
     height: 400px;
   }
@@ -610,6 +674,15 @@ p strong {
   .formulario-nosotros select {
     margin-left: 50px;
     margin-bottom: 20px;
+  }
+  .ubicacion {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 50px;
+  }
+  .ubicacion .card {
+    margin-bottom: 400px;
   }
   footer {
     height: 400px;

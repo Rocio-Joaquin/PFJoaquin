@@ -80,6 +80,15 @@
             margin-bottom: 20px;
         }
     }
+    //SUCURSALES
+    .ubicacion{
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-content: center;
+        .card{
+            margin-bottom:400px;   
+        }
+    }
     //FOOTER
     footer{
         height:400px;
@@ -106,6 +115,7 @@
 
         }
     }
+
 }
 
 @media (min-width:$mediaTablet)and (max-width:780px){
@@ -192,6 +202,16 @@
             margin-bottom: 20px;
         }
     }
+    //SUCURSALES
+    .ubicacion{
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-content: center;
+        .card{
+            margin-bottom:400px;   
+        }
+    }
+
     //FOOTER
     footer{
         height:400px;
@@ -287,6 +307,16 @@
         select{
             margin-left: 50px;
             margin-bottom: 20px;
+        }
+    }
+    //SUCURSALES
+    .ubicacion{
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-content:space-around;
+        margin: 50px;
+        .card{
+            margin-bottom:400px; 
         }
     }
     //FOOTER
