@@ -13,9 +13,7 @@ p{
     }
 }
 .ubicacion{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
+    @include formulario (flex,row,space-around);
     margin: auto;
     margin-bottom: 400px;
     .card{
@@ -25,7 +23,7 @@ p{
         }  
     }
     .card-body{
-        border: 1px solid rgba(0, 0, 0, 0.349);
+        border: 1px solid $colorborde;
         border-bottom-left-radius:1px;
         border-bottom-right-radius:1px;
         h5{
@@ -39,20 +37,18 @@ p{
         }
         .btn{
             margin: auto;
-            background:white;
+            background:$colorTres;
             border: 1px solid $colorUno;
-            display: flex;
             color: $colorUno;
+            display: flex;
             justify-content: center;
             width: 150px;
             font-size: 18px;
             &:hover{
                 background:$colorUno;
-                color: white;
+                color:$colorTres;
             }
         }
-       
-
     }
 }
 

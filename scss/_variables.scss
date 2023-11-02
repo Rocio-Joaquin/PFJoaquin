@@ -4,14 +4,15 @@ $colorDos:black;
 $colorTres:rgb(255, 255, 255);
 $colorCuatro:rgb(75 75 75 / 35%);
 $colorCinco:#1a1a1a;
+$colorborde:rgba(0, 0, 0, 0.349);
 //TIPOGRAFIA
 $raleway:'Raleway', sans-serif;
+$anton:'Anton', sans-serif;
 //MEDIAS-QUERIES
 $mediaMobile:480px;
 $mediaTablet:481px;
 $mediaTablet2:780px;
 $mediaDesktop:980px;
-
 //MIXINS
 @mixin flex ($display,$flex-direction,$just,$a-content,$a-items){
     display: $display;
@@ -32,7 +33,6 @@ $mediaDesktop:980px;
     justify-content: center;
     background: $colorDos;
 }
-
 %input{
     padding: 20px;
     background:$colorDos;
@@ -65,6 +65,7 @@ $mediaDesktop:980px;
     border-left: none;
     border-right: none;
     color: white;
+    max-height: 150px;
 }
 %label{
 padding: 20px;

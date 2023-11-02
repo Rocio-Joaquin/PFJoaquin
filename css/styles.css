@@ -39,6 +39,7 @@
   border-left: none;
   border-right: none;
   color: white;
+  max-height: 150px;
 }
 
 .formulario-reservas label, .formulario-nosotros label {
@@ -287,7 +288,7 @@ h2 strong {
 .carta div .btn {
   background: black;
   color: rgb(255, 255, 255);
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
   font-family: "Raleway", sans-serif;
 }
 .carta div .btn:hover {
@@ -308,7 +309,6 @@ h2 strong {
 .formulario-nosotros textarea {
   margin-left: 40px;
   width: 700px;
-  max-height: 150px;
 }
 .formulario-nosotros label {
   margin-left: 40px;
@@ -376,17 +376,17 @@ p strong {
 }
 .ubicacion .card-body .btn {
   margin: auto;
-  background: white;
+  background: rgb(255, 255, 255);
   border: 1px solid rgb(189, 82, 11);
-  display: flex;
   color: rgb(189, 82, 11);
+  display: flex;
   justify-content: center;
   width: 150px;
   font-size: 18px;
 }
 .ubicacion .card-body .btn:hover {
   background: rgb(189, 82, 11);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .formulario-reservas {
@@ -400,6 +400,7 @@ p strong {
 }
 .formulario-reservas textarea {
   margin-left: 40px;
+  width: 700px;
 }
 .formulario-reservas label {
   margin-left: 40px;

@@ -13,7 +13,6 @@
         @extend %textarea;
         margin-left: 40px;
         width: 700px;
-        max-height:150px;
     }
     label{
         @extend %label;
@@ -29,7 +28,7 @@
         border-radius: 2px;  
     }   
 } 
-//Animacion para boton de formularios
+//Animacion para botones
 @keyframes animacionboton{
     0%{
         transform: scale(1.05) rotate(6deg);

@@ -12,6 +12,7 @@
     textarea{
         @extend %textarea;
         margin-left: 40px;
+        width: 700px;
     }
     label{
         @extend %label;
