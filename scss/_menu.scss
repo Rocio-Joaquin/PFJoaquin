@@ -1,9 +1,10 @@
 
 .fondo-card{
-    background:$colorCinco;
-    background-image: url(../img/desayuno.jpg);
-    height: 700px;
     @include formulario (flex,row, space-around);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(../img/desayuno.jpg);
+    height: 700px;
     margin-top: 100px;
     .card{
         margin-top: 100px;
@@ -35,7 +36,7 @@
     }
 }
 .titulo{
-    background:$colorCinco;
+    background:$colorDos;
     color:$colorUno;
     margin-bottom: -100px;
     margin-top: 200px;
@@ -45,18 +46,34 @@
         letter-spacing: 10px;
     }
 }
-
 .carta{
-    background-image: url(../img/desayuno.jpg);
+    background-image:url("../img/menu-fondo.jpg");
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 350px;
     h2{
         text-align: center;
         font-size: 30px;
-        padding: 130px;
-        letter-spacing: 20px;
+        padding-bottom: 100px;
         color: $colorTres;
+        font-family:$raleway;
+        margin: auto;
+    }
+    div{
+        @include formulario (flex,row, space-evenly);
+        margin: -20px;
+        .btn{
+            background:$colorDos;
+            color: $colorTres;
+            border:1px solid white;
+            font-family: $raleway;
+            &:hover{
+                background:$colorTres;
+                color:$colorDos;
+                border:1px solid $colorDos;
+            }
+
+        }
     }
 }

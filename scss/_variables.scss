@@ -7,12 +7,10 @@ $colorCinco:#1a1a1a;
 //TIPOGRAFIA
 $raleway:'Raleway', sans-serif;
 //MEDIAS-QUERIES
-/*$mediaMobile:768px;
-$mediaDesktop:768px;*/
 $mediaMobile:480px;
 $mediaTablet:481px;
-$mediaTablet2:991px;
-$mediaDesktop:992px;
+$mediaTablet2:780px;
+$mediaDesktop:980px;
 
 //MIXINS
 @mixin flex ($display,$flex-direction,$just,$a-content,$a-items){

@@ -13,6 +13,7 @@
         @extend %textarea;
         margin-left: 40px;
         width: 700px;
+        max-height:150px;
     }
     label{
         @extend %label;
@@ -24,7 +25,8 @@
     button{
         @extend %button;
         margin-left: 40px;
-        animation: animacionboton 2s infinite;     
+        animation: animacionboton 2s infinite;   
+        border-radius: 2px;  
     }   
 } 
 //Animacion para boton de formularios
