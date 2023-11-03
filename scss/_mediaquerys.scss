@@ -22,6 +22,7 @@
     } 
     //MENU
     .carta{
+        height: 400px;
         div{
             flex-direction:column ;
             justify-content: space-around;
@@ -127,6 +128,7 @@
     } 
     //MENU
     .carta{
+        height: 400px;
         div{
             flex-direction:column ;
             justify-content: space-around;
@@ -216,6 +218,7 @@
     }
     //MENU
     .carta{
+        height: 400px;
         div{
             flex-direction:column ;
             justify-content: space-around;
@@ -305,7 +308,7 @@
 @media (min-width:981px) {
         //HEADER
         .container-fluid{
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
             background-color:black;
             .nav-item{

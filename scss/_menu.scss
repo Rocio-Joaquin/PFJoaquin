@@ -9,7 +9,7 @@
     .card{
         margin-top: 100px;
         height: 500px;
-        background:$colorTres;
+        background:$colorSeis;
         .card-img-top{
             width: 200px;
             height: 200px;
@@ -47,33 +47,36 @@
     }
 }
 .carta{
-    background-image:url("../img/menu-fondo.jpg");
+    background-image:url(../img/menu-fondo.jpg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 350px;
+    height: 320px;
     h2{
         text-align: center;
         font-size: 30px;
         padding-bottom: 100px;
-        color: $colorTres;
+        color: $colorUno;
         font-family:$raleway;
         margin: auto;
     }
     div{
-        @include formulario (flex,row, space-evenly);
+        @include formulario (flex,row, space-around);
         margin: -20px;
+        font-size: 20px;
         .btn{
-            background:$colorDos;
-            color: $colorTres;
-            border:1px solid $colorTres;
+            margin: auto;
+            background:rgba(0, 0, 0, 0.678);
+            color: $colorUno;
+            border:1px solid $colorUno;
+            border: rgba(0, 0, 0, 0);
             font-family: $raleway;
+            width: 200px;
             &:hover{
-                background:$colorTres;
-                color:$colorDos;
+                background:$colorDos;
+                color:$colorUno;
                 border:1px solid $colorDos;
             }
-
         }
     }
 }
