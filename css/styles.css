@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   background: black;
+  margin: auto;
 }
 
 .formulario-reservas input, .formulario-nosotros input {
@@ -14,12 +15,14 @@
   border-right: none;
   color: rgb(255, 255, 255);
   margin-top: 20px;
+  margin-left: 40px;
 }
 
 .formulario-reservas select, .formulario-nosotros select {
   background: black;
   color: rgb(189, 82, 11);
   border: 1px solid rgb(189, 82, 11);
+  margin-left: 40px;
 }
 
 .formulario-reservas button, .formulario-nosotros button {
@@ -29,6 +32,8 @@
   border: 1px solid rgb(189, 82, 11);
   width: 100px;
   height: 40px;
+  margin-bottom: 20px;
+  margin-left: 40px;
 }
 
 .formulario-reservas textarea, .formulario-nosotros textarea {
@@ -40,11 +45,13 @@
   border-right: none;
   color: white;
   max-height: 150px;
+  margin-left: 40px;
 }
 
 .formulario-reservas label, .formulario-nosotros label {
   padding: 20px;
   color: white;
+  margin-left: 40px;
 }
 
 .container-fluid {
@@ -136,47 +143,13 @@ footer .footer .iconos-footer-ul li i {
   font-family: "Noto Sans SC", sans-serif;
 }
 
-.section-reservas {
-  margin: 20px;
-}
-.section-reservas h2 {
-  font-size: 30px;
-  text-align: center;
-}
-.section-reservas p {
-  font-size: 20px;
-  margin: 20px;
-}
-.section-reservas p strong {
-  color: rgb(189, 82, 11);
-}
-
 p {
   font-size: 20px;
   margin: 20px;
+  padding: 5px;
 }
 p strong {
   color: rgb(189, 82, 11);
-}
-
-.section-nosotros {
-  margin-left: 10px;
-}
-.section-nosotros h2 {
-  font-size: 30px;
-  text-align: center;
-}
-.section-nosotros p {
-  font-size: 20px;
-  margin: 20px;
-}
-.section-nosotros p strong {
-  color: rgb(189, 82, 11);
-}
-
-img.d-block {
-  width: 100%;
-  height: 600px;
 }
 
 h1 {
@@ -188,11 +161,6 @@ h1 strong {
   color: rgb(189, 82, 11);
 }
 
-p {
-  font-size: 20px;
-  padding: 5px;
-}
-
 h2 {
   font-size: 30px;
   text-align: center;
@@ -200,6 +168,11 @@ h2 {
 }
 h2 strong {
   color: rgb(189, 82, 11);
+}
+
+img.d-block {
+  width: 100%;
+  height: 600px;
 }
 
 .sugerencias {
@@ -304,18 +277,12 @@ h2 strong {
 .formulario-nosotros {
   width: 800px;
   height: 600px;
-  margin: auto;
 }
 .formulario-nosotros input {
   width: 700px;
-  margin-left: 40px;
 }
 .formulario-nosotros textarea {
-  margin-left: 40px;
   width: 700px;
-}
-.formulario-nosotros label {
-  margin-left: 40px;
 }
 .formulario-nosotros button {
   margin-left: 40px;
@@ -337,20 +304,6 @@ h2 strong {
     transform: none;
   }
 }
-h2 {
-  font-size: 30px;
-  text-align: center;
-  margin: 20px;
-}
-
-p {
-  font-size: 20px;
-  margin: 20px;
-}
-p strong {
-  color: rgb(189, 82, 11);
-}
-
 .ubicacion {
   display: flex;
   flex-direction: row;
@@ -365,7 +318,7 @@ p strong {
   height: 250px;
 }
 .ubicacion .card-body {
-  border: 1px solid rgba(0, 0, 0, 0.349);
+  border: 1px solid rgba(0, 0, 0, 0);
   border-bottom-left-radius: 1px;
   border-bottom-right-radius: 1px;
 }
@@ -379,12 +332,12 @@ p strong {
   text-align: center;
 }
 .ubicacion .card-body .btn {
+  display: flex;
+  justify-content: center;
   margin: auto;
   background: rgb(255, 255, 255);
   border: 1px solid rgb(189, 82, 11);
   color: rgb(189, 82, 11);
-  display: flex;
-  justify-content: center;
   width: 150px;
   font-size: 18px;
 }
@@ -396,25 +349,14 @@ p strong {
 .formulario-reservas {
   width: 800px;
   height: 700px;
-  margin: auto;
 }
 .formulario-reservas input {
   width: 700px;
-  margin-left: 40px;
 }
 .formulario-reservas textarea {
-  margin-left: 40px;
   width: 700px;
 }
-.formulario-reservas label {
-  margin-left: 40px;
-}
-.formulario-reservas select {
-  margin-left: 40px;
-}
 .formulario-reservas button {
-  margin-bottom: 20px;
-  margin-left: 40px;
   animation: animacionboton 2s infinite;
 }
 
