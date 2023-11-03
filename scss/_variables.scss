@@ -5,7 +5,8 @@ $colorTres:rgb(255, 255, 255);
 $colorCuatro:rgb(75 75 75 / 35%);
 $colorCinco:#1a1a1a;
 $colorSeis:#ffffff73;
-$colorborde:rgba(0, 0, 0, 0.349);
+$colorborde:rgba(0, 0, 0, 0);
+$colorSiete:rgba(0, 0, 0, 0.678);
 //TIPOGRAFIA
 $raleway:'Raleway', sans-serif;
 $anton:'Anton', sans-serif;
@@ -33,6 +34,7 @@ $mediaDesktop:980px;
     flex-direction: column;
     justify-content: center;
     background: $colorDos;
+    margin: auto;
 }
 %input{
     padding: 20px;
@@ -43,11 +45,13 @@ $mediaDesktop:980px;
     border-right: none;
     color:$colorTres;
     margin-top: 20px;
+    margin-left: 40px;
 }
 %select{
     background:$colorDos;
     color: $colorUno;
     border: 1px solid $colorUno;
+    margin-left: 40px;
     
 }
 %button{
@@ -57,6 +61,8 @@ $mediaDesktop:980px;
     border: 1px solid $colorUno;
     width: 100px;
     height:40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
 }
 %textarea{
     width: 300px;
@@ -67,10 +73,12 @@ $mediaDesktop:980px;
     border-right: none;
     color: white;
     max-height: 150px;
+    margin-left: 40px;
 }
 %label{
 padding: 20px;
 color: white;
+margin-left: 40px;
 }
 
 

@@ -3,20 +3,16 @@
     @extend %form;
     width:800px;
     height:600px;
-    margin: auto;
     input{
         @extend %input;
         width: 700px;
-        margin-left: 40px;
     }
     textarea{
         @extend %textarea;
-        margin-left: 40px;
         width: 700px;
     }
     label{
         @extend %label;
-        margin-left: 40px
     }
     select{
         @extend %select;

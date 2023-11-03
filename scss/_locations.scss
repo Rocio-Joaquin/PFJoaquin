@@ -1,17 +1,4 @@
 
-h2{
-    font-size:30px;
-    text-align: center;
-    margin: 20px;
-
-}
-p{
-    font-size:20px ;
-    margin: 20px;
-    strong{
-        color: $colorUno;
-    }
-}
 .ubicacion{
     @include formulario (flex,row,space-around);
     margin: auto;
@@ -36,12 +23,12 @@ p{
             text-align: center;
         }
         .btn{
+            display: flex;
+            justify-content: center;
             margin: auto;
             background:$colorTres;
             border: 1px solid $colorUno;
             color: $colorUno;
-            display: flex;
-            justify-content: center;
             width: 150px;
             font-size: 18px;
             &:hover{

@@ -4,41 +4,29 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family:'Noto Sans SC', sans-serif;
 }
-
-.section-reservas{
-    margin: 20px;
-    h2{
-        font-size:30px;
-        text-align: center;
-    }
-    p{
-        font-size:20px ;
-        margin: 20px;
-        strong{
-            color: $colorUno;
-        }
-    }
-} 
 p{
     font-size: 20px;
     margin:20px ;
+    padding: 5px;
     strong{
         color:$colorUno;
     }
 } 
-.section-nosotros{
-    margin-left: 10px;
-    h2{
-        font-size:30px;
-        text-align: center;
+h1{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    strong{
+        color:$colorUno;
     }
-    p{
-        font-size:20px ;
-        margin: 20px;
-        strong{
-            color: $colorUno;
-        }
+}    
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    strong{
+        color:$colorUno;
     }
 }

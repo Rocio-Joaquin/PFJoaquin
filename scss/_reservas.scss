@@ -3,29 +3,22 @@
     @extend %form;
     width: 800px;
     height: 700px;
-    margin: auto;
     input{
         @extend %input;
         width: 700px;
-        margin-left: 40px;
     }
     textarea{
         @extend %textarea;
-        margin-left: 40px;
         width: 700px;
     }
     label{
         @extend %label;
-        margin-left: 40px;
     }
     select{
         @extend %select;
-        margin-left: 40px
     }
     button{
         @extend %button;
-        margin-bottom: 20px;
-        margin-left: 40px;
         animation: animacionboton 2s infinite;
     }
 }        

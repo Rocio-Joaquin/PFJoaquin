@@ -66,10 +66,10 @@
         font-size: 20px;
         .btn{
             margin: auto;
-            background:rgba(0, 0, 0, 0.678);
+            background:$colorSiete;
             color: $colorUno;
             border:1px solid $colorUno;
-            border: rgba(0, 0, 0, 0);
+            border:$colorborde;
             font-family: $raleway;
             width: 200px;
             &:hover{
